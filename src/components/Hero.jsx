@@ -4,12 +4,17 @@ import { ArrowRight, Clock, Sparkles } from 'lucide-react';
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
 
-  const slides = ['/Hero1.jpg', '/Hero2.jpg', '/OP.jpg', '/ED1.jpg'];
+  const slides = [
+    { src: '/Videos/Elephant-vid.mp4', fallback: '/Hero1.jpg' },
+    { src: '/Videos/Rhino-vid.mp4', fallback: '/Hero2.jpg' },
+    { src: '/Videos/Leopard-vid.mp4', fallback: '/OP.jpg' },
+    { src: '/Videos/Lioness-walking.mp4', fallback: '/ED1.jpg' },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -17,14 +22,24 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[calc(100vh-80px)] overflow-hidden">
       <div className="absolute inset-0">
-        {slides.map((image, index) => (
+        {slides.map((slide, index) => (
           <div
-            key={image}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+            key={slide.src}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               index === activeSlide ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ backgroundImage: `url(${image})` }}
           >
+            <video
+              key={`${slide.src}-${index}`}
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={slide.fallback}
+            >
+              <source src={slide.src} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-black/55" />
           </div>
         ))}
@@ -33,12 +48,12 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-5xl flex-col justify-between px-6 py-20 text-white">
         <div className="mt-8 max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs text-gray-200 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-[#E8732A]" />
+            <Sparkles className="h-3.5 w-3.5 text-[#C5A46D]" />
             <span>Group Tours · Road Trips · Adventures Across Africa</span>
           </div>
 
           <h1 className="text-4xl font-bold leading-[1.15] tracking-tight text-white md:text-6xl">
-            The journey is <span className="font-serif italic text-[#E8732A]">just as exciting</span> as the destination.
+            The journey is <span className="font-serif italic text-[#C96A2B]">just as exciting</span> as the destination.
           </h1>
 
           <p className="max-w-2xl text-base font-normal leading-relaxed text-gray-200 md:text-lg">
@@ -46,7 +61,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
-            <button className="flex items-center gap-2 rounded-full bg-[#E8732A] px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#d4621c]">
+            <button className="flex items-center gap-2 rounded-full bg-[#C96A2B] px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#b15f25]">
               Find Your Adventure
               <ArrowRight className="h-4 w-4" />
             </button>
@@ -57,7 +72,7 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center gap-2 pt-2 text-xs text-gray-300">
-            <Clock className="h-3.5 w-3.5 text-[#E8732A]" />
+            <Clock className="h-3.5 w-3.5 text-[#C5A46D]" />
             <span>Affordable value · Small group size · Logistics handled for you</span>
           </div>
         </div>
@@ -84,7 +99,7 @@ export default function Hero() {
                 key={idx}
                 onClick={() => setActiveSlide(idx)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  activeSlide === idx ? 'w-8 bg-[#E8732A]' : 'w-2 bg-white/40 hover:bg-white/70'
+                  activeSlide === idx ? 'w-8 bg-[#C96A2B]' : 'w-2 bg-white/40 hover:bg-white/70'
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />

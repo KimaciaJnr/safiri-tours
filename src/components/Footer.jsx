@@ -15,7 +15,7 @@ export default function Footer() {
             Browse upcoming group tours, check availability, and claim your spot on a trip that will change how you see Africa.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-            <button className="bg-[#E8732A] hover:bg-[#d4621c] text-white px-7 py-3 rounded-full font-semibold text-sm flex items-center gap-2 transition-all">
+            <button className="bg-[#C96A2B] hover:bg-[#b15f25] text-white px-7 py-3 rounded-full font-semibold text-sm flex items-center gap-2 transition-all">
               View Upcoming Tours <ArrowRight className="w-4 h-4" />
             </button>
             <button className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-7 py-3 rounded-full font-semibold text-sm transition-all">
@@ -79,15 +79,15 @@ export default function Footer() {
             <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             <li className="flex items-center gap-2 pt-2 text-gray-300">
-              <Mail className="w-3.5 h-3.5 text-[#E8732A]" />
+              <Mail className="w-3.5 h-3.5 text-[#C5A46D]" />
               <span>info@safiriexpeditions.co.ke</span>
             </li>
             <li className="flex items-center gap-2 text-gray-300">
-              <Phone className="w-3.5 h-3.5 text-[#E8732A]" />
+              <Phone className="w-3.5 h-3.5 text-[#C5A46D]" />
               <span>+254 712 345 678</span>
             </li>
             <li className="flex items-center gap-2 text-gray-300">
-              <MapPin className="w-3.5 h-3.5 text-[#E8732A]" />
+              <MapPin className="w-3.5 h-3.5 text-[#C5A46D]" />
               <span>Nairobi, Kenya</span>
             </li>
           </ul>
@@ -98,7 +98,7 @@ export default function Footer() {
       <div className="border-t border-gray-800/60 py-6 px-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
           <p>© 2026 Safiri Expedition Tours. All rights reserved.</p>
-          <a href="#" className="text-[#E8732A] flex items-center gap-1 font-semibold hover:underline">
+          <a href="#" className="text-[#C96A2B] flex items-center gap-1 font-semibold hover:underline">
             Find Your Adventure <ArrowRight className="w-3 h-3" />
           </a>
         </div>

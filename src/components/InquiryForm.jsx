@@ -8,13 +8,13 @@ export default function InquiryForm() {
         
         {/* Left Content */}
         <div className="space-y-6">
-          <span className="text-xs font-semibold tracking-wider text-[#E8732A] uppercase">
+          <span className="text-xs font-semibold tracking-wider text-[#C96A2B] uppercase">
             YOUR ADVENTURE STARTS HERE
           </span>
 
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             Ready to explore <br />
-            <span className="text-[#2D6A6A] italic font-serif">Africa?</span>
+            <span className="text-[#0F5B5B] italic font-serif">Africa?</span>
           </h2>
 
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -33,7 +33,7 @@ export default function InquiryForm() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-[#2D6A6A]/10 text-[#2D6A6A]">
+              <div className="p-3 rounded-2xl bg-[#0F5B5B]/10 text-[#0F5B5B]">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
@@ -57,7 +57,7 @@ export default function InquiryForm() {
         {/* Right Form Card */}
         <div className="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100 space-y-6">
           <div>
-            <span className="text-[10px] font-bold tracking-widest text-[#2D6A6A] uppercase">BEGIN THE JOURNEY</span>
+            <span className="text-[10px] font-bold tracking-widest text-[#0F5B5B] uppercase">BEGIN THE JOURNEY</span>
             <h3 className="text-2xl font-bold text-gray-900 mt-1">Plan your next adventure</h3>
             <p className="text-xs text-gray-500 mt-1">
               Tell us what you're dreaming about — we'll reply with options and availability.
@@ -100,13 +100,13 @@ export default function InquiryForm() {
             <textarea
               rows={3}
               placeholder="Any questions or trip ideas..."
-              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#E8732A] resize-none"
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#C96A2B] resize-none"
             />
 
             {/* Cloudflare Mock Box */}
             <div className="p-3 border border-gray-200 rounded-xl flex items-center justify-between bg-gray-50">
               <div className="flex items-center gap-3">
-                <input type="checkbox" className="w-4 h-4 text-[#E8732A] rounded cursor-pointer" />
+                <input type="checkbox" className="w-4 h-4 text-[#C96A2B] rounded cursor-pointer" />
                 <span className="text-xs text-gray-700">Verify you are human</span>
               </div>
               <span className="text-[10px] text-gray-400">CLOUDFLARE</span>
@@ -114,7 +114,7 @@ export default function InquiryForm() {
 
             <button
               type="submit"
-              className="w-full bg-[#E8732A] hover:bg-[#d4621c] text-white py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-md"
+              className="w-full bg-[#C96A2B] hover:bg-[#b15f25] text-white py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-md"
             >
               Send My Inquiry <ArrowRight className="w-4 h-4" />
             </button>

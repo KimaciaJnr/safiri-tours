@@ -1,39 +1,79 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
 import NairobiSafariPage from './pages/NairobiSafariPage';
 import CoastalSafariPage from './pages/CoastalSafariPage';
 import FlyInSafariPage from './pages/FlyInSafariPage';
 import BeachSafariPage from './pages/BeachSafariPage';
 import BudgetMaraPage from './pages/BudgetMaraPage';
+import SafariDetailPage from './pages/SafariDetailPage';
+import { getPackageBySlug } from './data/safaris';
 
 const pageMap = {
   home: <Home />,
+  about: <AboutPage />,
   'nairobi-safari': <NairobiSafariPage />,
   'coastal-safari': <CoastalSafariPage />,
   'fly-in-safari': <FlyInSafariPage />,
   'beach-safari': <BeachSafariPage />,
   'budget-mara': <BudgetMaraPage />,
-  about: <Home />,
+};
+
+const homeSections = ['mountain-climbing', 'safari-guide', 'destinations', 'inquiry'];
+
+const pageTitles = {
+  home: 'Safiri Expedition Tours | Kenya Safaris, Group Tours & Road Trips',
+  about: 'About Us | Safiri Expedition Tours',
+  'nairobi-safari': 'Kenya Safaris from Nairobi | Safiri Expedition Tours',
+  'coastal-safari': 'Kenya Safaris from the Coast | Safiri Expedition Tours',
+  'fly-in-safari': 'Kenya Fly-In Safaris | Safiri Expedition Tours',
+  'beach-safari': 'Kenya Beach Safaris | Safiri Expedition Tours',
+  'budget-mara': 'Budget Maasai Mara Deals | Safiri Expedition Tours',
 };
 
 function App() {
-  const [activePage, setActivePage] = useState(() => {
-    const hash = window.location.hash.replace('#', '').trim();
-    return hash || 'home';
-  });
+  const [hash, setHash] = useState(() => window.location.hash);
 
   useEffect(() => {
-    const updatePage = () => {
-      const hash = window.location.hash.replace('#', '').trim();
-      setActivePage(hash || 'home');
-    };
-
-    window.addEventListener('hashchange', updatePage);
-    return () => window.removeEventListener('hashchange', updatePage);
+    const onHashChange = () => setHash(window.location.hash);
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
-  return pageMap[activePage] || <Home />;
+  const rawKey = hash.replace('#', '').trim();
+  const [key, query] = rawKey.split('?');
+  const isSection = homeSections.includes(key);
+  const isSafariDetail = key.startsWith('safari/');
+  const pageKey = pageMap[key] && !isSection && !isSafariDetail ? key : 'home';
+
+  const safariSlug = isSafariDetail ? key.replace('safari/', '') : null;
+  const safariPkg = safariSlug ? getPackageBySlug(safariSlug) : null;
+
+  useEffect(() => {
+    if (isSafariDetail && safariPkg) {
+      document.title = `${safariPkg.title} | Safiri Expedition Tours`;
+    } else {
+      document.title = pageTitles[pageKey] || pageTitles.home;
+    }
+  }, [pageKey, isSafariDetail, safariPkg]);
+
+  useEffect(() => {
+    if (isSection) {
+      const el = document.getElementById(key);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo(0, 0);
+      requestAnimationFrame(() => {
+        const main = document.getElementById('main');
+        if (main) main.focus({ preventScroll: true });
+      });
+    }
+  }, [key, isSection]);
+
+  if (isSection) return <Home key={query || key} />;
+  if (isSafariDetail) return <SafariDetailPage slug={key.replace('safari/', '')} />;
+  return pageMap[key] || <Home />;
 }
 
 export default App;

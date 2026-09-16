@@ -4,38 +4,38 @@ import { ArrowRight } from 'lucide-react';
 export default function Destinations() {
   const cards = [
     {
-      image: "/ED1.jpg",
+      image: "/Photos/Flamengos.jpg",
       tag: "City Tours",
       title: "Town & City Escapes"
     },
     {
-      image: "/ED2.jpg",
+      image: "/Photos/Hippo-plus-calf.jpg",
       tag: "Adventure",
       title: "Forest & Mountain Trails"
     },
     {
-      image: "/ED3.jpg",
+      image: "/Photos/Rhino-plus-calf.jpg",
       tag: "Safiri Classic",
       title: "Signature Road Trips"
     }
   ];
 
   return (
-    <section id="mountain-climbing" className="bg-[#FAF8F5] py-20 px-6">
+    <section id="mountain-climbing" className="bg-cream-light py-20 px-6">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <span className="text-xs font-semibold tracking-wider text-[#E8732A] uppercase">
+            <span className="text-xs font-semibold tracking-wider text-brand-orange uppercase">
               MOUNTAIN CLIMBING
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
               Discover what makes <br />
-              <span className="text-[#2D6A6A] italic font-serif">Africa special</span>
+              <span className="text-teal-light italic font-serif">Africa special</span>
             </h2>
           </div>
 
-          <a href="#destinations" className="inline-flex items-center gap-2 text-[#E8732A] font-semibold text-sm hover:gap-3 transition-all">
+          <a href="#destinations" className="inline-flex items-center gap-2 text-brand-orange font-semibold text-sm hover:gap-3 transition-all">
             View all destinations <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -52,7 +52,7 @@ export default function Destinations() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 space-y-2">
-                <span className="bg-[#E8732A] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block">
+                <span className="bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block">
                   {card.tag}
                 </span>
                 <h3 className="text-white font-bold text-xl leading-snug">{card.title}</h3>

@@ -11,7 +11,7 @@ const socialLinks = [
 
 const exploreLinks = [
   { label: 'Kenya Safaris from Nairobi', href: '#nairobi-safari' },
-  { label: 'Kenya Safaris from Coast', href: '#coastal-safari' },
+  { label: 'Kenya Safaris from the Coast', href: '#coastal-safari' },
   { label: 'Kenya Fly-In Safaris', href: '#fly-in-safari' },
   { label: 'Kenya Beach Safaris', href: '#beach-safari' },
   { label: 'Budget Maasai Mara Deals', href: '#budget-mara' },
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Links */}
-      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="w-full px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Column */}
         <div className="space-y-4">
           <div className="bg-white p-2 rounded-2xl inline-block">
@@ -135,7 +135,7 @@ export default function Footer() {
 
       {/* Sub-footer Copyright */}
       <div className="border-t border-gray-800/60 py-6 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-500">
           <p>© 2026 Safiri Expedition Tours. All rights reserved.</p>
           <a href="#inquiry" className="text-brand-terracotta flex items-center gap-1 font-semibold hover:underline">
             Find Your Adventure <ArrowRight className="w-3 h-3" />

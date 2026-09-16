@@ -4,7 +4,7 @@ import { Users, Compass, CheckCircle2, ArrowRight } from 'lucide-react';
 export default function Philosophy() {
   return (
     <section id="about" className="bg-cream-light py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side: Image with Floating Card */}
         <div className="relative flex justify-center">
           <div className="relative w-full max-w-md">

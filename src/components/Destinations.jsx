@@ -22,7 +22,7 @@ export default function Destinations() {
 
   return (
     <section id="mountain-climbing" className="bg-cream-light py-20 px-6">
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="w-full space-y-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>

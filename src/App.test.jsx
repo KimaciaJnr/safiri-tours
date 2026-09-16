@@ -29,6 +29,34 @@ describe('App routing', () => {
     expect(screen.getByRole('heading', { name: /The journey is/i })).toBeInTheDocument();
   });
 
+  it('opens Nairobi category cards to the destination-filtered category page', () => {
+    render(<App />);
+    expect(screen.getByRole('link', { name: /Masai Mara/i })).toHaveAttribute(
+      'href', '#nairobi-safari?destination=Masai%20Mara',
+    );
+  });
+
+  it('renders the Nairobi safari page for #nairobi-safari with a preselected destination', () => {
+    window.history.replaceState(null, '', '#nairobi-safari?destination=Masai%20Mara');
+    render(<App />);
+    expect(screen.getByRole('heading', { name: /Masai Mara safaris/i })).toBeInTheDocument();
+  });
+
+  it('routes homepage category cards to destination-filtered category pages', () => {
+    render(<App />);
+
+    const expectedLinks = [
+      { label: /Masai Mara/i, href: '#nairobi-safari?destination=Masai%20Mara' },
+      { label: /Mara Bush Camp/i, href: '#fly-in-safari?destination=Mara%20Bush%20Camp' },
+      { label: /Bush & Diani Beach/i, href: '#beach-safari?destination=Bush%20%26%20Diani%20Beach' },
+      { label: /Budget Amboseli/i, href: '#budget-mara?destination=Budget%20Amboseli' },
+    ];
+
+    expectedLinks.forEach(({ label, href }) => {
+      expect(screen.getByRole('link', { name: label })).toHaveAttribute('href', href);
+    });
+  });
+
   it('renders the Nairobi safari page for #nairobi-safari', () => {
     window.history.replaceState(null, '', '#nairobi-safari');
     render(<App />);
@@ -37,10 +65,10 @@ describe('App routing', () => {
 
   it('renders each safari page for its route hash', () => {
     const cases = [
-      { hash: '#coastal-safari', heading: 'Coastal Safari' },
-      { hash: '#fly-in-safari', heading: 'Fly-In Safari' },
-      { hash: '#beach-safari', heading: 'Beach & Safari' },
-      { hash: '#budget-mara', heading: 'Budget Mara' },
+      { hash: '#coastal-safari', heading: 'Safaris from the Coast' },
+      { hash: '#fly-in-safari', heading: 'Fly-In Safaris' },
+      { hash: '#beach-safari', heading: 'Bush & Beach Safaris' },
+      { hash: '#budget-mara', heading: 'Budget Safaris' },
     ];
 
     cases.forEach(({ hash, heading }) => {
@@ -66,6 +94,18 @@ describe('App routing', () => {
     window.history.replaceState(null, '', '#about');
     render(<App />);
     expect(screen.getByRole('heading', { name: 'About Safiri Expedition Tours' })).toBeInTheDocument();
+  });
+
+  it('resets to the top for page navigation instead of preserving the old page scroll position', () => {
+    const scrollToSpy = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+
+    render(<App />);
+
+    act(() => {
+      navigateTo('about');
+    });
+
+    expect(scrollToSpy).toHaveBeenCalledWith(0, 0);
   });
 
   it('renders Home and scrolls to the section for a section hash', () => {

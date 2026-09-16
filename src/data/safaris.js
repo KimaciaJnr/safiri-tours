@@ -413,7 +413,7 @@ const thirteenDayGrandTour = {
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'The ultimate Kenya safari experience. This 13-day journey combines the best of Kenya\u2019s wildlife reserves with the coastal beauty of Diani Beach. From the big cats of the Masai Mara to the elephants of Amboseli, the dramatic landscapes of Hell\u2019s Gate, and the remote wilderness of Taita Hill, before unwinding on the white sands of Diani. A comprehensive, once-in-a-lifetime itinerary.',
+    'The ultimate Kenya safari experience. This 13-day journey combines the best of Kenya\u2019s wildlife reserves with the coastal beauty of Diani Beach. From the big cats of the Masai Mara to the elephants of Amboseli, the dramatic landscapes of Hell\u2019s Gate, and the remote wilderness of Taita Hill, before unwinding on the white sands of Diani and flying back to Nairobi. A comprehensive, once-in-a-lifetime itinerary.',
   itinerary: [
     {
       day: 1,
@@ -445,65 +445,65 @@ const thirteenDayGrandTour = {
     },
     {
       day: 5,
-      title: 'Hell\u2019s Gate National Park',
+      title: 'Hell\u2019s Gate and Crescent Island',
       description:
-        'Spend the day at Hell\u2019s Gate National Park, one of the few parks where you can walk and cycle among wildlife. Ride through the dramatic gorges and past towering cliffs. Look for giraffes, zebras, and buffalo. Overnight near Naivasha.',
-      mainActivity: 'Cycling and walking in Hell\u2019s Gate',
+        'Start the day cycling through Hell\u2019s Gate National Park, one of Kenya\u2019s few parks where you can ride among zebras, giraffes, antelopes, and buffalo. Return for lunch, then head to Crescent Island for a guided nature walk among the wildlife and a relaxing boat ride on Lake Naivasha.',
+      mainActivity: 'Cycling, nature walk, and boat ride',
     },
     {
       day: 6,
-      title: 'Lake Naivasha to Lake Nakuru',
+      title: 'Lake Naivasha to Amboseli',
       description:
-        'Drive to Lake Nakuru National Park after breakfast. Arrive for lunch and enjoy an afternoon game drive. Nakuru is famous for flamingos, rhinos, and Rothschild\u2019s giraffes.',
+        'Depart after breakfast and drive south towards Amboseli National Park. Arrive in time for lunch, then head out for an afternoon game drive between 16:00 and 18:30, when Amboseli\u2019s famous free-ranging elephants gather against the backdrop of Mount Kilimanjaro.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 7,
-      title: 'Lake Nakuru to Amboseli',
+      title: 'Full Day in Amboseli',
       description:
-        'Depart after breakfast and drive south towards Amboseli National Park. The journey takes you through the Rift Valley and across the plains. Arrive for lunch and enjoy an afternoon game drive with Kilimanjaro views.',
-      mainActivity: 'Afternoon game drive',
+        'Rise early for a sunrise game drive between 06:00 and 09:00 to catch the animals at their most active. Return for breakfast, then continue with a full-day game drive and packed picnic lunch. The park is famous for its large elephant herds and the backdrop of Mount Kilimanjaro.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 8,
-      title: 'Full Day in Amboseli',
-      description:
-        'Explore Amboseli with morning and afternoon game drives. The park is famous for its large elephant herds and the backdrop of Mount Kilimanjaro. Visit Observation Hill and the swamps for diverse wildlife.',
-      mainActivity: 'Full-day game drives',
-    },
-    {
-      day: 9,
       title: 'Amboseli to Taita Hill Sanctuary',
       description:
-        'Drive to the Taita Hills Wildlife Sanctuary, a private conservancy nestled in the Taita Mountains. Arrive for lunch and enjoy an afternoon game drive in this quiet, exclusive wilderness.',
+        'Depart for the Taita Hills Wildlife Sanctuary after breakfast, enjoying an en-route morning game drive. Arrive in time for lunch and an afternoon game drive. The waterholes below the sanctuary lodge offer wonderful opportunities to view animals close to their natural habitat.',
       mainActivity: 'Afternoon game drive',
     },
     {
-      day: 10,
+      day: 9,
       title: 'Full Day in Taita Hill Sanctuary',
       description:
-        'Spend a full day exploring the sanctuary with morning and afternoon game drives. The area is home to elephants, lions, buffalo, and a variety of antelope species. The mountain scenery is stunning.',
+        'Spend a full day in the sanctuary with morning and afternoon game drives. The area is home to elephants, lions, buffalo, and a variety of antelope species, with sweeping views across the Taita Mountains and the vast Tsavo plains.',
       mainActivity: 'Full-day game drives',
     },
     {
-      day: 11,
+      day: 10,
       title: 'Taita Hills to Diani Beach',
       description:
-        'After a morning game drive and breakfast, drive south to the coast. Arrive at Diani Beach in the early afternoon and check into your beach hotel. Spend the afternoon relaxing on the white sand or swimming in the turquoise waters.',
-      mainActivity: 'Transfer to the coast',
+        'Go for an early morning game drive, when wildlife is most active and your chances of encountering the Big Five are highest. Return for breakfast, check out, and drive south to the coast. Arrive at Diani Beach in time for lunch and a relaxed afternoon by the ocean.',
+      mainActivity: 'Morning game drive and transfer to the coast',
     },
     {
-      day: 12,
+      day: 11,
       title: 'Diani Beach',
       description:
-        'A full day at leisure on Diani Beach. Options include snorkelling, diving, kite surfing, a visit to the coral reefs, or simply relaxing by the ocean. This is your reward after 10 days of safari.',
+        'A full day at leisure on Diani Beach. Options include snorkelling, diving, kite surfing, a visit to the coral reefs, or simply relaxing on the white sand. This is your reward after ten days of safari.',
       mainActivity: 'Beach day at leisure',
     },
     {
-      day: 13,
-      title: 'Departure',
+      day: 12,
+      title: 'Diani to Nairobi',
       description:
-        'Transfer from Diani Beach to Moi International Airport in Mombasa for your departure flight, or continue your onward travel plans.',
+        'After breakfast, transfer to Ukunda Airstrip for a flight to Nairobi\u2019s Wilson Airport. On arrival, transfer to your Nairobi hotel for a relaxed afternoon in the city.',
+      mainActivity: 'Flight to Nairobi',
+    },
+    {
+      day: 13,
+      title: 'Nairobi to Home',
+      description:
+        'After breakfast, transfer to Jomo Kenyatta International Airport in Nairobi for your departure flight, or continue your onward travel plans.',
       mainActivity: 'Airport transfer and departure',
     },
   ],
@@ -518,12 +518,13 @@ const thirteenDayGrandTour = {
     'Park and conservancy entry fees',
     'Professional English-speaking driver-guide throughout',
     'All ground transport in a 4x4 safari Landcruiser',
+    'Domestic flight Diani (Ukunda) to Nairobi (Wilson)',
     '12 nights accommodation (safari lodges and beach hotel)',
     'All meals as specified',
     'Drinking water throughout',
   ],
   excludes: [
-    'International and domestic flights',
+    'International flights',
     'Airport transfers not listed in itinerary',
     'Tips and gratuities',
     'Personal items, travel insurance, and visa fees',
@@ -535,7 +536,7 @@ const sixDayNaivashaNakuruSamburu = {
   slug: '6-days-naivasha-nakuru-samburu-ol-pejeta',
   title: '6 Days Tour: Lake Naivasha, Nakuru, Samburu & Ol Pejeta',
   duration: '6 Days / 5 Nights',
-  price: 'From $1,881 / person',
+  price: 'From $1,562 / person',
   image: '/Photos/Flamengos.jpg',
   category: 'nairobi',
   pickup: 'Nairobi',
@@ -567,10 +568,10 @@ const sixDayNaivashaNakuruSamburu = {
     },
     {
       day: 4,
-      title: 'Full Day in Samburu',
+      title: 'Samburu & Reteti Elephant Sanctuary',
       description:
-        'Spend the day exploring Samburu with morning and afternoon game drives. The reserve is home to the Samburu Special Five \u2013 Grevy\u2019s zebra, reticulated giraffe, gerenuk, Beisa oryx, and Somali ostrich \u2013 species found nowhere else in Kenya.',
-      mainActivity: 'Full-day game drives',
+        'Spend the morning at Reteti Elephant Sanctuary, where rescued elephants are rehabilitated by the Samburu community. Enjoy a close-up encounter and learn about the conservation effort. After lunch, continue game drives through Samburu, searching for the Special Five.',
+      mainActivity: 'Elephant sanctuary visit and game drives',
     },
     {
       day: 5,
@@ -590,6 +591,7 @@ const sixDayNaivashaNakuruSamburu = {
   highlights: [
     'Birdlife spectacle at Lake Naivasha and Nakuru',
     'Samburu Special Five \u2013 rare northern species',
+    'Reteti Elephant Sanctuary visit',
     'Chimpanzee sanctuary at Ol Pejeta',
     'Diverse landscapes from lakes to semi-arid plains',
   ],
@@ -621,127 +623,128 @@ const sixteenDayKenyaSafari = {
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'The most comprehensive Kenya safari available. Over 16 days, you will visit the country\u2019s greatest national parks and reserves, from the Masai Mara and Amboseli to Samburu, Nakuru, and the remote northern frontier. This is a thorough exploration of Kenya\u2019s wildlife, landscapes, and cultures.',
+    'The most comprehensive Kenya safari available. Over 16 days, follow a classic northern-to-southern loop from the rugged rivers of Samburu to Ol Pejeta\u2019s chimps, the flamingo lakes of Bogoria and Nakuru, three full days in the Masai Mara, the Rift Valley\u2019s Lake Naivasha, and the elephant plains of Amboseli before finishing in the volcanic wilds of Tsavo. A thorough exploration of Kenya\u2019s wildlife, landscapes, and cultures.',
   itinerary: [
     {
       day: 1,
       title: 'Arrival in Nairobi',
       description:
-        'Arrive at the airport and transfer to your hotel. Meet your driver guide for a safari briefing. Spend the afternoon at leisure.',
+        'Arrive at the airport and transfer to your hotel. Meet your driver guide for a safari briefing. Lunch and dinner take place at the hotel, and you can spend the afternoon at leisure or enjoy a city walk.',
       mainActivity: 'Arrival',
     },
     {
       day: 2,
-      title: 'Nairobi to Lake Nakuru',
+      title: 'Nairobi to Samburu National Reserve',
       description:
-        'Depart after breakfast and drive to Lake Nakuru National Park. Arrive for lunch and enjoy an afternoon game drive. The park is famous for flamingos, both black and white rhinos, and Rothschild\u2019s giraffes.',
+        'After a short safari briefing, drive north through an agricultural region rich with coffee, wheat, and other crops. Cross the equator at Nanyuki and descend from the cool highlands into wildlife-rich savanna woodlands. Arrive at Samburu National Reserve in time for lunch and an afternoon game drive along the Ewaso Nyiro River, home to the Samburu Special Five.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 3,
-      title: 'Lake Nakuru to Masai Mara',
+      title: 'Full Day in Samburu National Reserve',
       description:
-        'After breakfast, drive to the Masai Mara National Reserve. Arrive for lunch and enjoy your first afternoon game drive in this iconic reserve.',
-      mainActivity: 'Afternoon game drive',
+        'Enjoy an early morning game drive, the ideal time to search for elusive leopards and lions. Return to your lodge for breakfast and spend the day at leisure, with an early evening game drive. Alternatively, take a full day out with a packed picnic lunch and explore deeper into the reserve.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 4,
-      title: 'Full Day in Masai Mara',
+      title: 'Samburu to Ol Pejeta Conservancy',
       description:
-        'Full day of game drives with a picnic lunch. The Mara offers some of the best wildlife viewing on the planet, with large prides of lions, cheetahs on the plains, and hippos in the Mara River.',
-      mainActivity: 'Full-day game drives',
+        'After breakfast, depart Samburu with a game drive en route, driving to Nanyuki. Arrive at Ol Pejeta Conservancy in time for lunch and afternoon rest. Ol Pejeta is the only place in Kenya to see chimpanzees. Enjoy an early evening game drive around the conservancy before dinner.',
+      mainActivity: 'Chimpanzee sanctuary and game drive',
     },
     {
       day: 5,
-      title: 'Full Day in Masai Mara',
+      title: 'Ol Pejeta to Lake Bogoria',
       description:
-        'Another full day in the Mara. Explore different areas of the reserve and look for species you may have missed. Between July and October, the Great Migration crosses through.',
-      mainActivity: 'Full-day game drives',
+        'Depart from the foot of Mount Kenya and trace the fringes of the Aberdare Ranges towards the Rift Valley, arriving on the shores of Lake Bogoria in time for lunch. After lunch, take a late afternoon game drive to see the flamingos. The geothermically active western shore is dotted with geysers and hot springs.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 6,
-      title: 'Masai Mara to Lake Naivasha',
+      title: 'Lake Bogoria to Lake Nakuru',
       description:
-        'Drive to Lake Naivasha after a morning game drive. Enjoy a boat ride on the lake in the afternoon and visit Hell\u2019s Gate National Park.',
-      mainActivity: 'Boat ride and park visit',
+        'After breakfast, depart for Lake Nakuru National Park, stopping en route at Maji Moto, where a series of tiny hot springs ooze into clear pools. Arrive at Lake Nakuru in time for lunch and an afternoon game drive around the lake, known for its flamingo flocks, rhinos, lions, buffalo, and over 400 recorded bird species.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 7,
-      title: 'Lake Naivasha to Amboseli',
+      title: 'Lake Nakuru to Masai Mara',
       description:
-        'Depart for Amboseli National Park after breakfast. Arrive for lunch and enjoy an afternoon game drive with Kilimanjaro views.',
+        'After an early breakfast, drive into Maasai land, tracing the Rift Valley escarpment before stopping at the Masai town of Narok. From here, make your way into the Masai Mara National Reserve, arriving in time for lunch and an afternoon game drive in this extraordinarily wildlife-dense landscape.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 8,
-      title: 'Full Day in Amboseli',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day in Amboseli with morning and afternoon game drives. The park\u2019s elephant herds and Kilimanjaro backdrop create some of Kenya\u2019s most iconic images.',
+        'Start with an early morning game drive between 06:00 and 09:00 to catch the African sunrise, the most rewarding game drive time. Return to the lodge for a quick breakfast, then head out with a packed picnic lunch for a full day of game viewing across the open savannah.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 9,
-      title: 'Amboseli to Tsavo West',
+      title: 'Full Day in Masai Mara',
       description:
-        'Drive to Tsavo West National Park. Visit the Shetani lava flow and Mzima Springs, where hippos and crocodiles can be seen underwater through an observation chamber.',
-      mainActivity: 'Game drive and Mzima Springs',
-    },
-    {
-      day: 10,
-      title: 'Tsavo West to Tsavo East',
-      description:
-        'Cross into Tsavo East National Park, one of Africa\u2019s largest wilderness areas. The park is famous for its red elephants and vast open plains. Afternoon game drive.',
-      mainActivity: 'Afternoon game drive',
-    },
-    {
-      day: 11,
-      title: 'Full Day in Tsavo East',
-      description:
-        'Full day exploring Tsavo East. Visit the Galana River and Mudanda Rock. The park offers excellent elephant and lion viewing in a dramatic landscape.',
+        'Another full day in the Mara. Explore one of the richest predator areas of the reserve, with picnic lunch out on the plains. Between July and October the Great Migration herds and their river crossings dominate the landscape.',
       mainActivity: 'Full-day game drives',
     },
     {
-      day: 12,
-      title: 'Tsavo to Samburu',
+      day: 10,
+      title: 'Full Day in Masai Mara',
       description:
-        'Drive north to Samburu National Reserve. Arrive for lunch and enjoy an afternoon game drive along the Ewaso Nyiro River.',
+        'A third full day of game drives. With the extra time, your guide can pursue species you have not yet found, from cheetahs on the open plains to hippos and crocodiles in the Mara River. Return to the lodge in the late afternoon.',
+      mainActivity: 'Full-day game drives',
+    },
+    {
+      day: 11,
+      title: 'Masai Mara to Lake Naivasha',
+      description:
+        'After breakfast, drive to the shores of Lake Naivasha in the Great Rift Valley, arriving in time for lunch. In the afternoon, enjoy a boat ride among hippos and hundreds of bird species, with optional visits to Crescent Island and Hell\u2019s Gate.',
+      mainActivity: 'Boat ride on Lake Naivasha',
+    },
+    {
+      day: 12,
+      title: 'Lake Naivasha to Amboseli',
+      description:
+        'After breakfast, head south to Amboseli National Park, arriving in time for lunch. Set out on an afternoon game drive between 16:00 and 18:30 to catch the final activity of the day, with Mount Kilimanjaro towering over the park\u2019s famous elephant herds.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 13,
-      title: 'Full Day in Samburu',
+      title: 'Full Day in Amboseli National Park',
       description:
-        'Full day in Samburu. Look for the Samburu Special Five: Grevy\u2019s zebra, reticulated giraffe, gerenuk, Beisa oryx, and Somali ostrich. The area also hosts lions, leopards, and wild dogs.',
+        'A full day at the park. Head out on an early morning game drive between 06:00 and 09:00 to catch the sunrise and the animals at their most active. Return for a quick breakfast, then continue with a full-day game drive and packed picnic lunch.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 14,
-      title: 'Samburu to Ol Pejeta',
+      title: 'Amboseli to Tsavo West National Park',
       description:
-        'Drive to Ol Pejeta Conservancy. Visit the Chimpanzee Sanctuary and the northern white rhino enclosure. Afternoon game drive through the conservancy.',
-      mainActivity: 'Chimpanzee sanctuary and game drive',
+        'Depart for Tsavo West National Park after breakfast, arriving at your lodge in time for lunch. Spend the afternoon at leisure, then head out on an evening game drive around the park, home to Mzima Springs, the Shetani lava fields, and the Ngulia black rhino sanctuary.',
+      mainActivity: 'Evening game drive',
     },
     {
       day: 15,
-      title: 'Ol Pejeta to Nairobi',
+      title: 'Tsavo West to Tsavo East National Park',
       description:
-        'After a morning game drive and breakfast, drive back to Nairobi. Arrive in the afternoon for a farewell dinner.',
-      mainActivity: 'Morning game drive',
+        'After breakfast, depart for Tsavo East National Park. After check-in and lunch, enjoy an afternoon game drive through this vast wilderness, keeping an eye out for the famous red elephants, maneless lions, and more than 500 recorded bird species.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 16,
-      title: 'Departure',
+      title: 'Tsavo East to Nairobi',
       description:
-        'Transfer to the airport for your departure flight.',
+        'After breakfast, drive back to Nairobi, arriving in time for your onward flight home.',
       mainActivity: 'Airport transfer',
     },
   ],
   highlights: [
-    'Seven national parks and one private conservancy',
-    'Big Five viewing across multiple ecosystems',
-    'Samburu Special Five \u2013 rare northern species',
-    'Mzima Springs underwater hippo viewing',
-    'Chimpanzee sanctuary and white rhino conservation',
+    'Samburu Special Five and the northern frontier',
+    'Chimpanzees and rhinos at Ol Pejeta',
+    'Flamingos and geysers at Lake Bogoria',
+    'Three full days in the Masai Mara',
+    'Mzima Springs and the red elephants of Tsavo',
+    'Kilimanjaro sunrises over Amboseli',
   ],
   includes: [
     'Park and conservancy entry fees',
@@ -771,85 +774,85 @@ const tenDayKenyaClassic = {
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'A classic ten-day Kenya safari circuit covering five of the country\u2019s top destinations. From the big cats of the Mara to the flamingos of Nakuru, the elephants of Amboseli, and the red earth of Tsavo, this is a comprehensive wildlife experience through Kenya\u2019s most celebrated parks.',
+    'A classic ten-day Kenya safari circuit covering five of the country\u2019s top destinations. From the big cats of the Mara to the flamingos of Nakuru, a sunrise hike up Mount Longonot, the elephants of Amboseli, and the twin Tsavo parks, this is a comprehensive wildlife experience through Kenya\u2019s most celebrated landscapes.',
   itinerary: [
     {
       day: 1,
-      title: 'Arrival in Nairobi',
+      title: 'Nairobi to Masai Mara',
       description:
-        'Arrive and transfer to your hotel. Meet your driver guide for a briefing on the journey ahead.',
-      mainActivity: 'Arrival',
+        'Pick up from your residence or hotel and depart for the Masai Mara National Reserve. Stop at the Great Rift Valley viewpoint, the largest valley in the world, for photos. Arrive in time for check-in and a relaxed lunch, then enjoy your first afternoon game drive between 16:00 and 18:30.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Nairobi to Masai Mara',
-      description:
-        'Depart after breakfast and drive to the Masai Mara. Stop at the Great Rift Valley viewpoint. Arrive for lunch and enjoy an afternoon game drive.',
-      mainActivity: 'Afternoon game drive',
-    },
-    {
-      day: 3,
       title: 'Full Day in Masai Mara',
       description:
-        'Full day of game drives. The Mara\u2019s open plains support enormous populations of wildlife, including lions, cheetahs, elephants, and wildebeest.',
+        'A full day of game drives within this expansive reserve teeming with wildlife. Focus on one of the richest predator areas of the Mara, with a bush picnic lunch and en-route game viewing back to your camp in the evening.',
       mainActivity: 'Full-day game drives',
     },
     {
-      day: 4,
+      day: 3,
       title: 'Masai Mara to Lake Nakuru',
       description:
-        'Drive to Lake Nakuru National Park. Afternoon game drive around the lake, famous for flamingos and rhinos.',
+        'Check out after breakfast and drive to Lake Nakuru National Park, arriving in time for lunch and an afternoon game drive. The park is famous for its flocks of flamingos, rhinos, lions, buffalo, and more than 400 recorded bird species.',
       mainActivity: 'Afternoon game drive',
     },
     {
-      day: 5,
+      day: 4,
       title: 'Lake Nakuru to Lake Naivasha',
       description:
-        'Drive to Lake Naivasha for a boat ride and visit Hell\u2019s Gate National Park for cycling among wildlife.',
-      mainActivity: 'Boat ride and cycling',
+        'Drive into the Rift Valley, arriving on the shores of Lake Naivasha in time for lunch. The freshwater lake supports a wide variety of water birds and mammals including giraffes, hippos, and antelopes. In the afternoon, enjoy an optional cycle at Hell\u2019s Gate National Park or a relaxing boat ride on the lake.',
+      mainActivity: 'Cycling or boat ride',
+    },
+    {
+      day: 5,
+      title: 'Mount Longonot Hike',
+      description:
+        'After breakfast, depart for a morning hike up Mount Longonot with a packed lunch and drinking water. Climb to the crater rim and circle the peak, with sweeping views across the Rift Valley, then return to camp for a relaxed afternoon.',
+      mainActivity: 'Guided hike at Mount Longonot',
     },
     {
       day: 6,
-      title: 'Naivasha to Amboseli',
+      title: 'Lake Naivasha to Amboseli',
       description:
-        'Depart for Amboseli National Park. Arrive for lunch and enjoy an afternoon game drive with Kilimanjaro views.',
+        'Enjoy an early breakfast and depart Naivasha by around 06:30 to beat the traffic, arriving at Amboseli National Park by about 14:00 with two stopovers en route. Check in for lunch, refresh, and depart for an afternoon game drive at the foot of Mount Kilimanjaro.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 7,
       title: 'Full Day in Amboseli',
       description:
-        'Full day in Amboseli with morning and afternoon game drives. Encounter large elephant herds against the backdrop of Kilimanjaro.',
+        'Early morning game drives to catch the animals at their most active, returning to the lodge for breakfast. Later, head out for an afternoon game drive, or take a full day in the park with a packed picnic lunch. Amboseli is home to some of the largest elephants in Africa.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 8,
-      title: 'Amboseli to Tsavo East',
+      title: 'Amboseli to Tsavo West',
       description:
-        'Drive to Tsavo East National Park. Afternoon game drive in this vast wilderness, famous for red elephants and dramatic landscapes.',
+        'After breakfast, drive to Tsavo West National Park, arriving in time for lunch and an afternoon game drive. The park is known for the Mzima Springs, the Shetani lava fields, and the Ngulia black rhino sanctuary, where endangered rhinos are protected from extinction.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 9,
-      title: 'Full Day in Tsavo East',
+      title: 'Tsavo West to Tsavo East',
       description:
-        'Full day exploring Tsavo East. Visit the Galana River and look for elephants, lions, and leopards across the open plains.',
-      mainActivity: 'Full-day game drives',
+        'Check out after breakfast and drive to Tsavo East with a game drive en route, checking in at the lodge for lunch. Later, depart for an afternoon game drive across the vast park, home to the Tsavo lions, red elephants, and more than 500 recorded bird species.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 10,
-      title: 'Tsavo to Nairobi',
+      title: 'Tsavo East to Nairobi',
       description:
-        'After a morning game drive and breakfast, drive back to Nairobi. Arrive in the afternoon for your departure.',
-      mainActivity: 'Morning game drive',
+        'After breakfast, enjoy extra game viewing en route as you exit the park, then drive back to Nairobi, arriving in the afternoon for your departure flight.',
+      mainActivity: 'Game drive en route to Nairobi',
     },
   ],
   highlights: [
     'Five iconic destinations in one trip',
     'Big Five viewing',
-    'Hell\u2019s Gate cycling experience',
+    'Sunrise hike at Mount Longonot',
     'Kilimanjaro backdrop in Amboseli',
-    'Red elephants of Tsavo',
+    'Red elephants of Tsavo and the Ngulia rhinos',
   ],
   includes: [
     'Park entry fees',
@@ -879,120 +882,121 @@ const elephantTrailSafari = {
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'Named for Kenya\u2019s iconic elephants, this 15-day safari follows the paths of these magnificent creatures across some of the country\u2019s finest wildlife areas. From Amboseli\u2019s elephant herds to the red elephants of Tsavo and the conservation success stories of Samburu and Ol Pejeta, this is an immersive journey through elephant country.',
+    'Following Kenya\u2019s most famous residents across the landscape, this 15-day safari traces elephant country from the remote forests of Meru and the rescued herds of Reteti to the red elephants of Tsavo. Along the way, you cross the great predator plains of the Masai Mara, paddle Lake Naivasha, and watch Kilimanjaro rise above Amboseli \u2013 an immersive journey through the places elephants call home.',
   itinerary: [
     {
       day: 1,
-      title: 'Arrival in Nairobi',
+      title: 'Nairobi to Meru National Park',
       description:
-        'Arrive and transfer to your hotel. Optional visit to the David Sheldrick Wildlife Trust to see orphaned elephants.',
-      mainActivity: 'Arrival and elephant orphanage visit',
+        'Meet your safari representative at the airport and set off north, driving through coffee and wheat farmland before crossing the equator at Nanyuki. Arrive at Meru National Park in time for lunch, followed by an afternoon game drive. Meru is a wild and untamed park where elephants and big cats roam across 870 square kilometres of riverine forests and open plains.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Nairobi to Amboseli',
+      title: 'Full Day at Meru National Park',
       description:
-        'Drive to Amboseli National Park. Afternoon game drive among the park\u2019s famous elephant herds with Kilimanjaro views.',
-      mainActivity: 'Afternoon game drive',
+        'Spend a full day exploring Meru with a packed picnic lunch. The park supports healthy populations of elephants and big cats, alongside rare species like the Grevy\u2019s zebra and reticulated giraffe. Enjoy the solitude of one of Kenya\u2019s least-visited parks.',
+      mainActivity: 'Full-day game drive',
     },
     {
       day: 3,
-      title: 'Full Day in Amboseli',
+      title: 'Meru to Samburu National Reserve',
       description:
-        'Full day exploring Amboseli. The park hosts some of the largest elephant herds in Africa, with over 1,500 individuals.',
-      mainActivity: 'Full-day game drives',
+        'Depart with a morning game drive en route and head to Samburu National Reserve. Arrive for lunch and take an afternoon game drive along the Ewaso Nyiro River, seeking elephants, leopards, and the Samburu Special Five.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 4,
-      title: 'Amboseli to Tsavo West',
+      title: 'Full Day in Samburu',
       description:
-        'Drive to Tsavo West. Visit Mzima Springs and explore the park\u2019s volcanic landscapes.',
-      mainActivity: 'Game drive and Mzima Springs',
+        'Start the day with an early morning game drive and return to camp mid-morning. After lunch, head out again for an evening drive, or spend a full day out with a picnic lunch. Samburu\u2019s arid landscape and riverbank thickets keep leopards and lions close by.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 5,
-      title: 'Tsavo West to Tsavo East',
+      title: 'Full Day at Reteti Elephant Sanctuary',
       description:
-        'Cross into Tsavo East, home to the famous red elephants. Afternoon game drive along the Galana River.',
-      mainActivity: 'Afternoon game drive',
+        'Visit Reteti Elephant Sanctuary, where orphaned elephants are rehabilitated by the Samburu community before returning to the wild. Enjoy a close-up encounter with the resident herd and learn about the sanctuary\u2019s pioneering community-led conservation. Return to Samburu for the evening.',
+      mainActivity: 'Elephant sanctuary visit',
     },
     {
       day: 6,
-      title: 'Full Day in Tsavo East',
+      title: 'Samburu to Ol Pejeta Conservancy',
       description:
-        'Full day in Tsavo East. The park\u2019s red soil stains the elephants\u2019 skin, creating a distinctive appearance.',
-      mainActivity: 'Full-day game drives',
+        'Drive south with a game drive en route to Nanyuki, arriving at Ol Pejeta Conservancy in time for lunch. Take an evening game drive through the conservancy, the only place in Kenya where you can see chimpanzees, alongside rhinos, lions, and elephants.',
+      mainActivity: 'Chimpanzee sanctuary and game drive',
     },
     {
       day: 7,
-      title: 'Tsavo to Taita Hills',
+      title: 'Ol Pejeta to Nairobi',
       description:
-        'Drive to the Taita Hills Wildlife Sanctuary. Afternoon game drive in this private conservancy.',
-      mainActivity: 'Afternoon game drive',
+        'Depart early after breakfast and drive back to Nairobi. In the afternoon, visit the David Sheldrick Wildlife Trust, where orphaned elephants are hand-reared through a digital foster programme before being rehabilitated into the wild. Check in to your Nairobi hotel for dinner and overnight.',
+      mainActivity: 'Elephant orphanage visit',
     },
     {
       day: 8,
-      title: 'Full Day in Taita Hills',
+      title: 'Nairobi to Masai Mara',
       description:
-        'Full day exploring the sanctuary. The area supports a healthy elephant population and diverse wildlife.',
-      mainActivity: 'Full-day game drives',
-    },
-    {
-      day: 9,
-      title: 'Taita Hills to Samburu',
-      description:
-        'Drive north to Samburu National Reserve. Afternoon game drive along the Ewaso Nyiro River.',
+        'Drive south-west through Maasai country via Narok, arriving in the Masai Mara National Reserve for lunch. Take an afternoon game drive across the reserve\u2019s sweeping plains, famous for their big cats and, during the migration season, herds of wildebeest and zebra.',
       mainActivity: 'Afternoon game drive',
     },
     {
-      day: 10,
-      title: 'Full Day in Samburu',
+      day: 9,
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day in Samburu. The reserve\u2019s elephant population is smaller but particularly photogenic against the arid landscape.',
+        'Spend a full day game driving through the Mara\u2019s richest predator areas, with a bush picnic lunch by the waterside. The reserve offers exceptional sightings of lions, leopards, cheetahs, elephants, and buffalo, as well as prolific birdlife.',
       mainActivity: 'Full-day game drives',
     },
     {
-      day: 11,
-      title: 'Samburu to Ol Pejeta',
+      day: 10,
+      title: 'Masai Mara to Lake Naivasha',
       description:
-        'Drive to Ol Pejeta Conservancy. Visit the northern white rhino enclosure and chimpanzee sanctuary.',
-      mainActivity: 'Conservation visits',
+        'Drive to the shores of Lake Naivasha in the Great Rift Valley. In the afternoon, enjoy a boat ride among hippos and more than 400 bird species. Spend the evening at a lakeside camp.',
+      mainActivity: 'Boat ride on Lake Naivasha',
+    },
+    {
+      day: 11,
+      title: 'Lake Naivasha to Amboseli',
+      description:
+        'Depart for Amboseli National Park after breakfast. Arrive in time for lunch, then enjoy an afternoon game drive with Mount Kilimanjaro towering in the background and Amboseli\u2019s famous elephant herds spread across the plains.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 12,
-      title: 'Full Day in Ol Pejeta',
+      title: 'Full Day in Amboseli',
       description:
-        'Full day game driving through the conservancy. Ol Pejeta has one of Kenya\u2019s highest densities of elephants.',
+        'Rise early for a sunrise game drive and photograph Kilimanjaro reflected across the swamps. After breakfast, head out for a full-day game drive with a packed picnic lunch, exploring the park\u2019s elephant herds, swamps, and Observation Hill.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 13,
-      title: 'Ol Pejeta to Lake Nakuru',
+      title: 'Amboseli to Tsavo West',
       description:
-        'Drive to Lake Nakuru National Park. Afternoon game drive. Nakuru\u2019s elephant population has grown significantly in recent years.',
-      mainActivity: 'Afternoon game drive',
+        'Drive to Tsavo West, the land of the legendary man-eaters. Arrive for lunch at your lodge, then head out for an evening game drive. Visit Mzima Springs, the Shetani lava flows, and the Ngulia black rhino sanctuary, all set against dramatic volcanic scenery.',
+      mainActivity: 'Game drive and Mzima Springs',
     },
     {
       day: 14,
-      title: 'Lake Nakuru to Nairobi',
+      title: 'Full Day in Tsavo East',
       description:
-        'Final morning game drive at Nakuru. Drive back to Nairobi for a farewell dinner.',
-      mainActivity: 'Morning game drive',
+        'Take a full-day game drive through Tsavo East with a packed picnic lunch. The park is home to the famous red elephants, maneless lions, and more than 500 bird species. Return to your lodge for dinner and overnight.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 15,
-      title: 'Departure',
+      title: 'Tsavo East to Nairobi',
       description:
-        'Transfer to the airport for your departure flight.',
-      mainActivity: 'Airport transfer',
+        'After breakfast, transfer to Mombasa airstrip and take a short flight back to Nairobi\u2019s Jomo Kenyatta International Airport (a road option is also available). Your safari ends on arrival for your onward journey home.',
+      mainActivity: 'Return flight to Nairobi',
     },
   ],
   highlights: [
-    'Follow elephant populations across six regions',
+    'Elephant-rich Meru National Park',
+    'Reteti Elephant Sanctuary encounter',
     'David Sheldrick Wildlife Trust visit',
+    'Big cat country in the Masai Mara',
     'Red elephants of Tsavo',
-    'Conservation encounters at Ol Pejeta',
-    'Diverse landscapes from savanna to semi-arid',
+    'Kilimanjaro sunrises in Amboseli',
   ],
   includes: [
     'Park and conservancy entry fees',
@@ -1022,92 +1026,93 @@ const bigFiveTrail = {
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'Designed for wildlife enthusiasts who want to see all of Africa\u2019s Big Five \u2013 lion, leopard, elephant, rhino, and buffalo \u2013 this 11-day trail takes you through Kenya\u2019s best parks for each species. Each destination is chosen for its exceptional Big Five sightings, with expert guides maximising your chances.',
+    'Designed for wildlife enthusiasts who want to see all of Africa\u2019s Big Five \u2013 lion, leopard, elephant, rhino, and buffalo \u2013 this 11-day trail sweeps from the rugged north to the savannahs of the south. Starting in Samburu, you cross Ol Pejeta and Lake Nakuru for rhinos and chimpanzees, explore the predator-rich Masai Mara, and finish beneath Kilimanjaro at Amboseli, one of the best places on earth for free-ranging elephants.',
   itinerary: [
     {
       day: 1,
-      title: 'Arrival in Nairobi',
+      title: 'Nairobi to Samburu',
       description:
-        'Arrive and transfer to your hotel. Safari briefing and welcome dinner.',
-      mainActivity: 'Arrival',
-    },
-    {
-      day: 2,
-      title: 'Nairobi to Masai Mara',
-      description:
-        'Drive to the Masai Mara. Afternoon game drive. The Mara is one of the best places in Africa to see lions and leopards.',
+        'Pick up from your hotel in Nairobi or at the airport and receive a short safari briefing. Head north through an agricultural region rich with coffee and wheat, cross the equator at Nanyuki, and descend into the wildlife-rich savanna woodlands. Arrive at Samburu National Reserve in time for lunch and an afternoon game drive along the Ewaso Nyiro River.',
       mainActivity: 'Afternoon game drive',
     },
     {
-      day: 3,
-      title: 'Full Day in Masai Mara',
+      day: 2,
+      title: 'Full Day in Samburu',
       description:
-        'Full day of game drives. Look for all Big Five: lions on the plains, leopards in the riverine forests, elephants in the marshes, buffalo herds, and the occasional rhino.',
+        'Enjoy an early morning game drive, the ideal time to search for elusive leopards and lions. Return to camp for breakfast, then spend the remainder of the day at leisure, with an early evening game drive. Alternatively, head out after breakfast with a picnic lunch for a full day of game drives.',
       mainActivity: 'Full-day game drives',
+    },
+    {
+      day: 3,
+      title: 'Samburu to Ol Pejeta Conservancy',
+      description:
+        'After breakfast, depart Samburu with a game drive en route, driving south to Nanyuki. Arrive at Ol Pejeta Conservancy in time for lunch and afternoon rest. Ol Pejeta is the only place in Kenya to see chimpanzees. Enjoy an early evening game drive around the conservancy before dinner.',
+      mainActivity: 'Chimpanzee sanctuary and game drive',
     },
     {
       day: 4,
-      title: 'Full Day in Masai Mara',
+      title: 'Ol Pejeta to Lake Nakuru',
       description:
-        'Another full day to track any Big Five species you haven\u2019t yet encountered. The Mara\u2019s predator density is among the highest in Africa.',
-      mainActivity: 'Full-day game drives',
+        'Check out after breakfast and drive to Lake Nakuru National Park, arriving in time for lunch and an afternoon game drive. The park is famous for its flocks of flamingos, black and white rhinos, lions, cape buffalo, and over 400 recorded bird species, with highlights including the Makalia Falls.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 5,
-      title: 'Masai Mara to Lake Nakuru',
+      title: 'Lake Nakuru to Masai Mara',
       description:
-        'Drive to Lake Nakuru, one of Kenya\u2019s best parks for rhino sightings. Afternoon game drive.',
+        'Enjoy an early morning game drive, then return for breakfast and check out. Drive into Maasai land, tracing the Rift Valley escarpment before stopping at the Masai town of Narok. Arrive at the Masai Mara in time for lunch and an afternoon game drive in this extraordinarily wildlife-dense reserve.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 6,
-      title: 'Lake Nakuru to Samburu',
+      title: 'Full Day in Masai Mara',
       description:
-        'Drive north to Samburu. The reserve offers excellent elephant and buffalo sightings.',
-      mainActivity: 'Afternoon game drive',
+        'A full day of game drives within the richest predator areas of the Mara. Expect lots of elephants, hippos, Masai giraffe, zebras, wildebeest, in addition to lions, leopards, cheetahs, and spotted hyenas, with a bush picnic lunch out on the plains.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 7,
-      title: 'Full Day in Samburu',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day in Samburu. The Ewaso Nyiro River attracts large buffalo herds and elephants. Lions are also frequently spotted.',
+        'Another full day exploring the Mara. The reserve\u2019s predator density is among the highest in Africa, so your guide will track any Big Five species you may not yet have encountered, from rhinos in the thickets to cheetahs on the open grassland.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 8,
-      title: 'Samburu to Ol Pejeta',
+      title: 'Masai Mara to Lake Naivasha',
       description:
-        'Drive to Ol Pejeta Conservancy, home to both black and white rhinos and the last two northern white rhinos.',
-      mainActivity: 'Afternoon game drive and rhino visit',
+        'Check out after breakfast and drive to Lake Naivasha, arriving in time for lunch. In the afternoon, enjoy a boat ride on the freshwater lake, home to around 400 species of birds and a sizeable population of hippos.',
+      mainActivity: 'Boat ride on Lake Naivasha',
     },
     {
       day: 9,
-      title: 'Full Day in Ol Pejeta',
+      title: 'Lake Naivasha to Amboseli',
       description:
-        'Full day at Ol Pejeta. The conservancy offers excellent chances to see all Big Five in a single day.',
-      mainActivity: 'Full-day game drives',
+        'Enjoy an early breakfast and depart Naivasha by around 06:30 to beat the traffic, arriving at Amboseli National Park by about 14:00 with two stopovers en route. Check in at your lodge for lunch, then depart for an afternoon game drive beneath Mount Kilimanjaro, home to the largest elephants in Africa.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 10,
-      title: 'Ol Pejeta to Nairobi',
+      title: 'Full Day in Amboseli',
       description:
-        'Final morning game drive. Drive back to Nairobi for a farewell dinner.',
-      mainActivity: 'Morning game drive',
+        'Early morning game drives to spot any missed game while the animals are most active, returning to the lodge for breakfast. Later, depart for an afternoon game drive, or spend the whole day in the park with packed picnic lunch. Amboseli is famous for its photogenic elephants against Kilimanjaro.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 11,
-      title: 'Departure',
+      title: 'Amboseli to Nairobi',
       description:
-        'Transfer to the airport for your departure flight.',
-      mainActivity: 'Airport transfer',
+        'After breakfast, check out and enjoy extra game viewing en route as you leave the park. Drive back to Nairobi, where you will be transferred to the airport, your residence, or the hotel of your choice.',
+      mainActivity: 'Game drive en route to Nairobi',
     },
   ],
   highlights: [
-    'Dedicated Big Five tracking across four parks',
-    'Leopard specialists in the Mara riverine forests',
-    'White and black rhino at Ol Pejeta',
-    'Expert Big Five guides',
-    'Concentrated wildlife areas chosen for sightings',
+    'Dedicated Big Five tracking across six parks',
+    'Samburu Special Five on the Ewaso Nyiro River',
+    'Rhinos and chimpanzees at Ol Pejeta',
+    'Flamingos at Lake Nakuru',
+    'Predator-rich Masai Mara game drives',
+    'Kilimanjaro and the elephant herds of Amboseli',
   ],
   includes: [
     'Park and conservancy entry fees',
@@ -1137,51 +1142,53 @@ const twoDayAmboseliMombasa = {
   accommodation: 'Tented camp or lodge',
   minPeople: 2,
   overview:
-    'Starting from the coast, this quick two-day safari takes you to Amboseli National Park for elephant and Kilimanjaro experiences. Perfect for travellers based in Mombasa or Diani who want a taste of the bush without a long journey from Nairobi.',
+    'Starting on the coast, this quick two-day safari takes you from Mombasa to Amboseli National Park for elephant and Kilimanjaro experiences, then returns you to Nairobi. The SGR train speeds you inland, making this a seamless bush-and-beach escape that links Mombasa to the capital in two days.',
   itinerary: [
     {
       day: 1,
       title: 'Mombasa to Amboseli National Park',
       description:
-        'Early morning pick up from your hotel in Mombasa or Diani. Drive north towards Amboseli, passing through the scenic Tsavo corridor. Arrive for lunch at your lodge. In the afternoon, enjoy your first game drive with views of Mount Kilimanjaro and Amboseli\u2019s famous elephant herds.',
+        'Early morning pick up from your hotel in Mombasa. Board the 8:00 SGR train to Emali, arriving around 1:00 pm where your driver-guide transfers you to your lodge in Amboseli. After lunch, enjoy your first game drive with views of Mount Kilimanjaro and Amboseli\u2019s famous elephant herds. Return to the lodge for dinner and overnight.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Amboseli to Mombasa',
+      title: 'Amboseli to Nairobi',
       description:
-        'Rise early for a sunrise game drive, capturing Kilimanjaro in the morning light. Return for breakfast and check out. Drive back to Mombasa, arriving in the late afternoon. Drop off at your hotel or the airport.',
+        'Rise early for a sunrise game drive, capturing Kilimanjaro in the morning light and exploring the swamps that attract hippos and flocks of birds. Return for breakfast and check out. Drive north to Nairobi with optional stops along the way, arriving in the late afternoon. Drop off at your hotel in the capital.',
       mainActivity: 'Morning game drive',
     },
   ],
   highlights: [
-    'Convenient coastal departure',
+    'Convenient SGR train departure from Mombasa',
     'Amboseli elephant herds and Kilimanjaro',
     'Sunrise and afternoon game drives',
-    'Quick safari escape from the beach',
+    'Ends in Nairobi after a quick safari escape',
   ],
   includes: [
     'Park entry fees (non-residents)',
     'Professional English-speaking driver-guide',
+    'SGR train ticket from Mombasa to Emali',
     'Transport in a safari Landcruiser',
     '1 night full-board accommodation',
     'Game drives as per itinerary',
     'Drinking water',
   ],
   excludes: [
-    'Hotel pick-up and drop-off in Mombasa (can be arranged)',
+    'Hotel pick-up in Mombasa (can be arranged)',
     'Tips and gratuities',
     'Personal items and travel insurance',
+    'Optional activities such as a Maasai village visit',
   ],
 };
 
-// --- Coastal Safari Packages ---
+// --- Safari Packages from the Coast ---
 
 const twoDayTsavoFromDianiMombasa = {
   slug: '2-day-tsavo-east-from-diani-mombasa',
   title: '2-Day Tsavo East Safari from Diani or Mombasa',
   duration: '2 Days / 1 Night',
-  price: 'From $350 / person',
+  price: 'From $380 / person',
   image: '/Photos/Elelphant-img.jpg',
   category: 'coastal',
   pickup: 'Diani or Mombasa',
@@ -1194,7 +1201,7 @@ const twoDayTsavoFromDianiMombasa = {
       day: 1,
       title: 'Diani/Mombasa to Tsavo East',
       description:
-        'Early morning pick up from your hotel. Drive north into Tsavo East National Park, arriving by midday. After lunch at your lodge, head out for an afternoon game drive. Tsavo East\u2019s flat, open terrain makes it one of the best parks in Kenya for spotting large herds of elephants. The red soil of the park gives the elephants a distinctive rust-coloured appearance. Look for lions, buffalo, giraffes, zebras, and the crocodile-filled Galana River.',
+        'Pick up from your beach hotel at 5:30 am and depart for Tsavo East National Park, the largest national park in Kenya, split east and west by the highway. Enjoy a game drive en route to your lodge, check in at Voi Safari Lodge in time for lunch, relax, then head back into the park for your afternoon game drive. Return to the lodge as the sun sets.',
       mainActivity: 'Afternoon game drive',
     },
     {
@@ -1207,7 +1214,7 @@ const twoDayTsavoFromDianiMombasa = {
   ],
   highlights: [
     'Red elephants of Tsavo',
-    'Galana River wildlife',
+    'Lugard Falls and Aruba Dam',
     'Open-plain game viewing',
     'Convenient coastal departure',
   ],
@@ -1230,7 +1237,7 @@ const oneDayTsavoFromDiani = {
   slug: '1-day-tsavo-east-from-diani',
   title: '1-Day Tsavo East National Park Safari from Diani',
   duration: '1 Day',
-  price: 'From $220 / person',
+  price: 'From $350 / person',
   image: '/Photos/Zebra-feeding.jpg',
   category: 'coastal',
   pickup: 'Diani',
@@ -1243,15 +1250,15 @@ const oneDayTsavoFromDiani = {
       day: 1,
       title: 'Diani to Tsavo East and Back',
       description:
-        'Depart Diani early in the morning and drive to Tsavo East National Park. Spend the morning on a game drive through the park\u2019s open plains, looking for elephants, lions, buffalo, and giraffes. Stop for a packed picnic lunch at a scenic spot within the park. Continue with an afternoon game drive before driving back to Diani, arriving in the early evening.',
+        'Pick up from your hotel and depart before sunrise, following the Mombasa\u2013Nairobi road to the first gate at Tsavo East National Park. Enter the park via Bachuma gate and embark on your first game drive in search of the red elephants, lions nicknamed the \u201cman-eaters of Tsavo,\u201d buffalos, cheetahs, giraffes, and antelopes. Visit the famous Aruba Dam, where wildlife gathers especially in the dry season. Stop for lunch at a restaurant, then enjoy another game drive before driving out of the park and returning to your beach resort, arriving late in the afternoon.',
       mainActivity: 'Full-day game drive',
     },
   ],
   highlights: [
     'Day trip from Diani Beach',
-    'Red elephants and open plains',
+    'Red elephants and the man-eaters of Tsavo',
+    'Aruba Dam and Lugard Falls',
     'Convenient for beach holidaymakers',
-    'Expert driver-guide',
   ],
   includes: [
     'Park entry fees (non-residents)',
@@ -1271,7 +1278,7 @@ const twoDayTsavoFromDiani = {
   slug: '2-day-tsavo-east-from-diani',
   title: '2-Day Tsavo East National Park Safari from Diani',
   duration: '2 Days / 1 Night',
-  price: 'From $350 / person',
+  price: 'From $380 / person',
   image: '/Photos/Antelopes-fighting.jpg',
   category: 'coastal',
   pickup: 'Diani',
@@ -1284,21 +1291,21 @@ const twoDayTsavoFromDiani = {
       day: 1,
       title: 'Diani to Tsavo East',
       description:
-        'Depart Diani after breakfast and drive to Tsavo East National Park. Arrive for lunch at your lodge. After a short rest, head out for an afternoon game drive through the park\u2019s open plains. Tsavo East is one of Kenya\u2019s most accessible parks from the coast, with excellent elephant and buffalo populations.',
+        'Pick up from your beach hotel at 5:30 and depart for Tsavo East National Park, the largest national park in Kenya, split into east and west by the highway. Enjoy a game drive en route to Voi Wildlife Lodge, check in for lunch, and relax before heading back into the park for your afternoon game drive. Return to the lodge as the sun sets.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
       title: 'Tsavo East to Diani',
       description:
-        'Rise early for a morning game drive, when predators are most active and the light is ideal for photography. Return for breakfast, check out, and drive back to Diani, arriving by early afternoon.',
+        'Enjoy an early breakfast followed by a morning game drive in the park, when predators are most active and the light is ideal for photography. Later, drive back to your beach hotel, arriving late in the afternoon.',
       mainActivity: 'Morning game drive',
     },
   ],
   highlights: [
     'Overnight in Tsavo East',
     'Early morning predator tracking',
-    'Red elephants and Galana River',
+    'Red elephants and Aruba Dam',
     'More time for thorough game viewing',
   ],
   includes: [
@@ -1320,27 +1327,27 @@ const oneDayTsavoFromMombasa = {
   slug: '1-day-tsavo-east-from-mombasa',
   title: '1-Day Tsavo East Safari from Mombasa',
   duration: '1 Day',
-  price: 'From $220 / person',
+  price: 'From $350 / person',
   image: '/Photos/Wildbeast-walking.jpg',
   category: 'coastal',
   pickup: 'Mombasa',
   accommodation: 'N/A (day trip)',
   minPeople: 2,
   overview:
-    'A full-day game drive from Mombasa into Tsavo East National Park. Experience the park\u2019s iconic red elephants, open plains, and diverse wildlife before returning to the city by evening.',
+    'A full-day game drive from Mombasa into Tsavo East National Park, just 200 km away. Experience the park\u2019s iconic red elephants, open plains, and diverse wildlife \u2013 including the famed man-eater lions \u2013 before returning to the city by late afternoon.',
   itinerary: [
     {
       day: 1,
       title: 'Mombasa to Tsavo East and Back',
       description:
-        'Depart Mombasa early and drive to Tsavo East. Spend the morning on a game drive, looking for elephants, lions, buffalo, and giraffes. Enjoy a packed picnic lunch in the park. Continue with an afternoon drive before returning to Mombasa in the early evening.',
+        'Pick up from your hotel or resort and depart before sunrise, following the Mombasa\u2013Nairobi road to the first gate at Tsavo East National Park. Enter the park via Bachuma gate and embark on your first game drive in search of the red elephants, the man-eaters of Tsavo, buffalos, cheetahs, giraffes, and antelopes. Visit the famous Aruba Dam, where wildlife gathers especially in the dry season. Stop for lunch at a restaurant, then enjoy another game drive before driving out of the park and returning to Mombasa, arriving late in the afternoon.',
       mainActivity: 'Full-day game drive',
     },
   ],
   highlights: [
     'Day trip from Mombasa',
-    'Red elephants of Tsavo',
-    'Open-plain game viewing',
+    'Red elephants and the man-eaters of Tsavo',
+    'Aruba Dam and Lugard Falls',
     'Expert driver-guide',
   ],
   includes: [
@@ -1361,55 +1368,56 @@ const fiveDaysMombasaAmboseliTsavo = {
   slug: '5-days-mombasa-amboseli-tsavo',
   title: '5 Days Mombasa, Amboseli and Tsavo',
   duration: '5 Days / 4 Nights',
-  price: 'From $1,250 / person',
+  price: 'From $1,298 / person',
   image: '/Photos/Elephants-hugging.jpg',
   category: 'coastal',
   pickup: 'Mombasa',
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'Combine the coastal city of Mombasa with two of Kenya\u2019s greatest national parks. Explore the elephant herds and Kilimanjaro views of Amboseli, then venture into the red-earth wilderness of Tsavo. This five-day itinerary from the coast offers diverse wildlife and landscapes.',
+    'Combine the coastal city of Mombasa with two of Kenya\u2019s greatest national parks. Explore the elephant herds and Kilimanjaro views of Amboseli, then venture from the red-earth wilderness of Tsavo East into the volcanic landscape of Tsavo West. This five-day itinerary from the coast offers diverse wildlife and landscapes.',
   itinerary: [
     {
       day: 1,
       title: 'Mombasa to Amboseli',
       description:
-        'Depart Mombasa early and drive north towards Amboseli National Park. Arrive for lunch and enjoy an afternoon game drive with views of Mount Kilimanjaro and large elephant herds.',
+        'Pick up from the airport or where you reside and head for Amboseli National Park with an en-route morning game drive, arriving in time for lunch. Head out for an afternoon game drive between 16:00 and 18:30, with views of Mount Kilimanjaro and large elephant herds as the animals gather for their last meal of the day.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
       title: 'Full Day in Amboseli',
       description:
-        'Full day in Amboseli with morning and afternoon game drives. Explore the park\u2019s diverse habitats, from open plains to swamps, and enjoy spectacular Kilimanjaro views.',
+        'Head out for an early morning game drive between 06:00 and 09:00 to catch the African sunrise, the most rewarding game drive time when most animals are active. Return to the lodge for a quick breakfast, then continue with a full-day game drive and packed picnic lunch across the park\u2019s diverse habitats.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 3,
       title: 'Amboseli to Tsavo East',
       description:
-        'After breakfast, drive to Tsavo East National Park. Arrive for lunch and enjoy an afternoon game drive through the park\u2019s vast open plains.',
+        'After breakfast, head for Tsavo East National Park with an en-route morning game drive, arriving in time for lunch and an afternoon game drive. The park is home to the Tsavo lions, red elephants, buffalo, and more than 500 recorded bird species.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 4,
-      title: 'Full Day in Tsavo East',
+      title: 'Tsavo East to Tsavo West',
       description:
-        'Full day exploring Tsavo East. Visit the Galana River and look for red elephants, lions, buffalo, and crocodiles. The park\u2019s dramatic landscapes are a highlight.',
-      mainActivity: 'Full-day game drives',
+        'After breakfast, check out with a game drive en route and drive to Tsavo West National Park. Check in at your lodge for lunch, then depart for an afternoon game drive. The park is home to the Ngulia black rhino sanctuary, the Mzima Springs, and the Shetani lava flows.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 5,
-      title: 'Tsavo to Mombasa',
+      title: 'Tsavo West to Mombasa',
       description:
-        'Morning game drive, then check out and drive back to Mombasa, arriving by early afternoon. Drop off at your hotel or the airport.',
-      mainActivity: 'Morning game drive',
+        'After breakfast, depart from Tsavo with an en-route game drive and drive back to Mombasa, arriving by early afternoon. Drop off at your hotel or the airport.',
+      mainActivity: 'Morning game drive en route',
     },
   ],
   highlights: [
     'Two major parks from the coast',
     'Amboseli elephant herds and Kilimanjaro',
     'Red elephants of Tsavo East',
+    'Mzima Springs and Ngulia rhino sanctuary',
     'Diverse landscapes and wildlife',
   ],
   includes: [
@@ -1432,55 +1440,56 @@ const fiveDaysMombasaTsavo = {
   slug: '5-days-mombasa-and-tsavo',
   title: '5 Days Tour Mombasa and Tsavo',
   duration: '5 Days / 4 Nights',
-  price: 'From $1,100 / person',
+  price: 'From $1,000 / person',
   image: '/Photos/Rhino-plus-calf.jpg',
   category: 'coastal',
   pickup: 'Mombasa',
   accommodation: 'Lodge or tented camp',
   minPeople: 2,
   overview:
-    'A focused five-day exploration of Tsavo East and Tsavo West from Mombasa. These two parks form one of Africa\u2019s largest protected wilderness areas, offering exceptional wildlife diversity, dramatic scenery, and a sense of vast, untamed Africa.',
+    'A focused five-day exploration of Tsavo East and Tsavo West from Mombasa. These two parks form one of Africa\u2019s largest protected wilderness areas, offering exceptional wildlife diversity, the Sheldrick elephant orphanage, dramatic scenery, and a sense of vast, untamed Africa.',
   itinerary: [
     {
       day: 1,
-      title: 'Mombasa to Tsavo West',
+      title: 'Mombasa to Tsavo East',
       description:
-        'Depart Mombasa and drive to Tsavo West National Park. Visit Mzima Springs, where hippos and crocodiles can be viewed through an underwater observation chamber. Afternoon game drive through the park\u2019s hilly terrain.',
-      mainActivity: 'Game drive and Mzima Springs',
+        'Pick up from the airport or where you are residing and head for Tsavo East National Park, arriving in time for lunch and an afternoon game drive. The park is home to the Tsavo lions, red elephants, and more than 500 recorded bird species. Dinner and overnight at the camp or lodge.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Full Day in Tsavo West',
+      title: 'Full Day in Tsavo East',
       description:
-        'Full day exploring Tsavo West. Visit the Shetani lava flow, Roaring Rocks viewpoint, and enjoy game drives through the park\u2019s diverse landscapes. Tsavo West is more mountainous and lush than its eastern counterpart.',
+        'After breakfast, start your game drive in Tsavo East National Park with a packed picnic lunch. While on the drive, get the chance to visit the Sheldrick elephant orphanage in Tsavo East. Look for aardwolf, buffalo, the maneless Tsavo lions, giraffes, zebras, wild dogs, and leopards across the vast landscape.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 3,
-      title: 'Tsavo West to Tsavo East',
+      title: 'Tsavo East to Tsavo West',
       description:
-        'Cross into Tsavo East National Park. Afternoon game drive through the park\u2019s flat, open plains. Tsavo East is famous for its red elephants and the Galana River.',
+        'After breakfast, check out from the lodge with a game drive en route and drive to Tsavo West National Park. Check in at the lodge for lunch, then depart for an afternoon game drive through the park\u2019s hilly terrain.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 4,
-      title: 'Full Day in Tsavo East',
+      title: 'Full Day in Tsavo West',
       description:
-        'Full day in Tsavo East. Explore the park\u2019s vast wilderness, looking for elephants, lions, buffalo, and the elusive leopard. Visit Mudanda Rock and the Lugard Falls.',
+        'After breakfast, depart for a full day in Tsavo West National Park with a packed picnic lunch. Visit the Mzima Springs, the Shetani lava fields, and the Ngulia black rhino sanctuary, where endangered rhinos are protected, and watch a magical Tsavo sunset.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 5,
-      title: 'Tsavo East to Mombasa',
+      title: 'Tsavo West to Mombasa',
       description:
-        'Morning game drive, then check out and drive back to Mombasa. Arrive by early afternoon for your onward plans.',
-      mainActivity: 'Morning game drive',
+        'After breakfast, depart from Tsavo with an en-route game drive and drive back to Mombasa. Arrive by early afternoon for your onward plans.',
+      mainActivity: 'Morning game drive en route',
     },
   ],
   highlights: [
     'Both Tsavo East and West in one trip',
+    'Sheldrick elephant orphanage visit',
     'Mzima Springs underwater hippo viewing',
-    'Red elephants and Galana River',
+    'Red elephants and the Galana River',
     'Diverse landscapes from volcanic to open plains',
   ],
   includes: [
@@ -1505,134 +1514,138 @@ const fourteenDayPhotographySafari = {
   slug: '14-days-photography-safari',
   title: '14 Days Photography Safari',
   duration: '14 Days / 13 Nights',
-  price: 'From $5,200 / person',
+  price: 'From $5,000 / person',
   image: '/Photos/Cheetars-looking.jpg',
   category: 'fly-in',
   pickup: 'Nairobi',
-  accommodation: 'Premium lodge or tented camp',
+  accommodation: 'Premium lodge',
   minPeople: 2,
   overview:
-    'A photographer\u2019s dream safari. This 14-day flying itinerary takes you to Kenya\u2019s most photogenic locations, from the Mara\u2019s big cats to Amboseli\u2019s elephant herds and Samburu\u2019s rare species. Minimise driving time and maximise golden-hour shooting with bush flights between destinations.',
+    'A photographer\u2019s dream safari. Spend 13 nights in the Masai Mara, the greatest wildlife location in Africa, focusing on big cats, the Great Migration river crossings, and spectacular birdlife. Travel in specially equipped open-sided 4\u00d74 vehicles ideal for photography, with an off-road permit granting access across the entire reserve.',
   itinerary: [
     {
       day: 1,
       title: 'Arrival in Nairobi',
       description:
-        'Arrive and transfer to your hotel. Meet your photography guide for a briefing on the trip ahead.',
+        'Arrive at Jomo Kenyatta International Airport and meet your guide for a briefing. Transfer to Sarova Stanley Hotel in Nairobi for overnight.',
       mainActivity: 'Arrival and briefing',
     },
     {
       day: 2,
       title: 'Fly to Masai Mara',
       description:
-        'Morning bush flight from Nairobi to the Masai Mara. Settle into your lodge and enjoy an afternoon game drive, focusing on golden-hour photography as the light softens across the plains.',
+        'Transfer to Wilson Airport for your bush flight to the Masai Mara. Arrive at Keekorok airstrip, meet your photography guide, and transfer to Keekorok Lodge for check-in and lunch. Head out for your first afternoon game drive in this world-famous reserve, an extension of Tanzania\u2019s Serengeti National Park.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 3,
       title: 'Full Day in Masai Mara',
       description:
-        'Full day of game drives timed for optimal photography. Dawn and dusk sessions target big cats, while midday focuses on landscapes, birds, and river scenes. The Mara offers Kenya\u2019s most dramatic wildlife photography opportunities.',
+        'Full day of game drives in the Mara with morning and afternoon sessions, or a full-day excursion with a picnic lunch. The Mara is renowned for its exceptional lion population, leopards, and cheetahs hunting the vast herds of wildebeest and zebra across the open plains.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 4,
       title: 'Full Day in Masai Mara',
       description:
-        'Another full day in the Mara. Focus on specific subjects \u2013 lion prides, cheetah hunts, hippo pools, or the Mara River crossing (seasonal). Your guide will position you for the best light and compositions.',
+        'Continue exploring the reserve. Focus on specific photographic subjects \u2013 lion prides, cheetah hunts on the grasslands, hippo pools at the Mara River, or vultures on a carcass. Your guide positions you for the best light and compositions.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 5,
-      title: 'Fly to Amboseli',
+      title: 'Full Day in Masai Mara',
       description:
-        'Morning flight from the Mara to Amboseli. Afternoon game drive with Mount Kilimanjaro as a backdrop. Amboseli\u2019s open plains and large elephant herds offer iconic African photography compositions.',
-      mainActivity: 'Afternoon game drive',
+        'Another full day in the Mara. During migration season (July\u2013October), the plains are filled with wildebeest and zebra, offering dramatic river-crossing opportunities with Nile crocodiles. Outside migration, the Mara offers exceptional year-round wildlife density.',
+      mainActivity: 'Full-day photography game drives',
     },
     {
       day: 6,
-      title: 'Full Day in Amboseli',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day capturing Amboseli\u2019s elephant herds against Kilimanjaro. Sunrise sessions focus on the mountain\u2019s snow-capped peak. Afternoon drives target the swamps and lake for diverse wildlife.',
+        'Full day of game drives. The Mara\u2019s open-sided vehicles and off-road permits allow you to reach remote areas away from other vehicles, giving you exclusive compositions in one of Africa\u2019s most photogenic landscapes.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 7,
-      title: 'Fly to Samburu',
+      title: 'Full Day in Masai Mara',
       description:
-        'Morning flight to Samburu National Reserve. Afternoon game drive along the Ewaso Nyiro River. Samburu\u2019s arid landscapes and unique species offer a different visual palette.',
-      mainActivity: 'Afternoon game drive',
+        'Explore new areas of the reserve. The Mara is home to over 500 bird species including lilac-breasted rollers, saddle-billed storks, and martial eagles. Target riverine habitats along the Mara River for diverse species and dramatic reflections.',
+      mainActivity: 'Full-day photography game drives',
     },
     {
       day: 8,
-      title: 'Full Day in Samburu',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day in Samburu focusing on the Special Five and the reserve\u2019s dramatic semi-arid landscapes. The river scenes with elephants and crocodiles are particularly photogenic.',
+        'Full day focusing on predator behaviour. Lions, leopards, and cheetahs are most active at dawn and dusk. Midday offers opportunities for landscapes, birdlife, and environmental portraits across the Mara\u2019s rolling terrain.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 9,
-      title: 'Fly to Ol Pejeta',
+      title: 'Full Day in Masai Mara',
       description:
-        'Morning flight to Ol Pejeta Conservancy. Afternoon game drive focusing on rhino photography and the conservancy\u2019s diverse habitats.',
-      mainActivity: 'Afternoon game drive',
+        'Continue your photographic exploration. Visit the Mara River hippo pools for reflective water shots, or track wildebeest herds across the open grasslands for vast landscape images teeming with wildlife.',
+      mainActivity: 'Full-day photography game drives',
     },
     {
       day: 10,
-      title: 'Full Day in Ol Pejeta',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day at Ol Pejeta. The conservancy offers close encounters with elephants, rhinos, and big cats in a variety of settings \u2013 from open plains to forest.',
+        'Full day in the reserve. The Mara\u2019s resident lions, hyenas, jackals, and bat-eared foxes provide constant photographic subjects, with dramatic social interactions and territorial behaviour captured throughout the day.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 11,
-      title: 'Fly to Lake Nakuru',
+      title: 'Full Day in Masai Mara',
       description:
-        'Morning flight to Lake Nakuru. Afternoon game drive focusing on flamingos, rhinos, and the lake\u2019s pink-fringed shores.',
-      mainActivity: 'Afternoon game drive',
+        'Full day of game drives. Target specific locations based on recent wildlife activity. The Mara\u2019s diverse terrain \u2013 from riverine forest to open plains and rocky outcrops \u2013 offers varied backdrops for your portfolio.',
+      mainActivity: 'Full-day photography game drives',
     },
     {
       day: 12,
-      title: 'Full Day in Nakuru',
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day at Lake Nakuru. Capture the spectacular flamingo flocks, rhino portraits, and the park\u2019s scenic lakeside landscapes.',
+        'Another full day in this extraordinary ecosystem. Focus on any remaining subjects or revisit your favourite locations. The Mara consistently delivers world-class photographic opportunities in every session.',
       mainActivity: 'Full-day photography game drives',
     },
     {
       day: 13,
-      title: 'Fly to Nairobi',
+      title: 'Full Day in Masai Mara',
       description:
-        'Morning flight back to Nairobi. Farewell lunch and equipment review. Transfer to your hotel.',
-      mainActivity: 'Return flight and farewell',
+        'Your final full day in the Mara. Spend every available moment in the field. Morning and afternoon sessions capture the full range of the reserve\u2019s wildlife and landscapes as the light shifts across the plains.',
+      mainActivity: 'Full-day photography game drives',
     },
     {
       day: 14,
       title: 'Departure',
       description:
-        'Transfer to the airport for your departure flight.',
-      mainActivity: 'Airport transfer',
+        'Early morning game drive, then return for breakfast. Transfer to Keekorok airstrip for your flight back to Nairobi, arriving in the afternoon. Drop off at your hotel or transfer to the airport for your departure flight.',
+      mainActivity: 'Final game drive and fly out',
     },
   ],
   highlights: [
-    'Bush flights between destinations \u2013 minimal driving',
-    'Photography-focused game drive timing',
-    'Six iconic parks in two weeks',
-    'Expert photography guide',
-    'Golden-hour and blue-hour sessions',
+    '13 nights in the Masai Mara \u2013 maximum time in Africa\u2019s top park',
+    'Open-sided 4\u00d74 vehicles ideal for photography',
+    'Off-road permit for exclusive access across the reserve',
+    'Small group \u2013 four participants per vehicle',
+    'Great Migration crossing opportunities (seasonal)',
   ],
   includes: [
-    'All bush flights between safari destinations',
-    'Professional photography guide',
-    'Park entry fees',
-    '13 nights premium accommodation',
-    'All meals as specified',
-    'Photography vehicle with bean bags and charging',
+    'Pickup and drop-off at your Nairobi hotel',
+    'Return domestic flights Nairobi\u2013Mara',
+    '13 nights full-board accommodation at Keekorok Lodge',
+    'Open-sided 4\u00d74 photographic vehicle with bean bags',
+    'Off-road permit valid for the entire stay',
+    'Professional English-speaking Masai driver-guide',
+    'All park entry fees',
+    'Unlimited game drives',
+    '3 meals per day',
   ],
   excludes: [
-    'International flights to/from Nairobi',
-    'Camera equipment',
+    'International flights',
+    'Meals not specified in the itinerary',
     'Tips and gratuities',
     'Personal items and travel insurance',
+    'Optional walking safari or balloon ride',
   ],
 };
 
@@ -1640,56 +1653,58 @@ const twoNightsLionsBluffLow = {
   slug: '2-nights-lions-bluff-low-season',
   title: '2 Nights Lions Bluff Flying Package (Low Season)',
   duration: '2 Nights / 3 Days',
-  price: 'From $1,650 / person',
+  price: 'From $2,000 / person',
   image: '/Photos/Lions-on-Jeep.jpg',
   category: 'fly-in',
   pickup: 'Nairobi (Wilson Airport)',
   accommodation: 'Lions Bluff Lodge',
   minPeople: 2,
   overview:
-    'Fly into the heart of the Lewa Wildlife Conservancy and stay at the spectacular Lions Bluff Lodge, perched on a hillside with panoramic views. This low-season package offers excellent value while delivering a premium bush experience with some of Kenya\u2019s best wildlife viewing.',
+    'Fly into the heart of the Taita Hills and Lumo Conservancy, staying at the spectacular Lions Bluff Lodge perched on a hillside with panoramic views. This low-season package offers excellent value while delivering a premium bush experience in one of southern Kenya\u2019s hidden gems.',
   itinerary: [
     {
       day: 1,
-      title: 'Fly to Lewa Conservancy',
+      title: 'Fly to Taita Hills',
       description:
-        'Morning bush flight from Nairobi\u2019s Wilson Airport to Lewa airstrip. Transfer to Lions Bluff Lodge, set on a hillside overlooking the conservancy. After lunch and a briefing, head out for an afternoon game drive. Lewa is home to black and white rhinos, elephants, lions, and Grevy\u2019s zebra.',
-      mainActivity: 'Afternoon game drive',
+        'Afternoon flight from Nairobi\u2019s Wilson Airport to Taita Hills Airstrip (ALS), departing at 13:30. Transfer to Lions Bluff Lodge, set on a hillside overlooking the Lumo Conservancy. Settle in and enjoy the lodge\u2019s panoramic views over the Taita Hills and surrounding wilderness.',
+      mainActivity: 'Arrival and scenic transfer',
     },
     {
       day: 2,
-      title: 'Full Day in Lewa',
+      title: 'Full Day in Lumo Conservancy',
       description:
-        'Full day of game drives in the Lewa Wildlife Conservancy. Morning and afternoon drives with a midday rest at the lodge. Lewa offers some of Kenya\u2019s best rhino viewing in a beautiful, uncrowded setting. The lodge\u2019s elevated position provides stunning views across the conservancy.',
+        'Full day of game drives in the Lumo Conservancy with shared game drives in open 4\u00d74 camp vehicles. The conservancy is home to elephants, lions, buffalo, and a diversity of wildlife. The lodge\u2019s elevated position provides stunning views across the plains.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 3,
-      title: 'Lewa to Nairobi',
+      title: 'Taita Hills to Nairobi',
       description:
-        'Enjoy an early morning game drive before returning for breakfast. Transfer to the airstrip for your flight back to Nairobi.',
-      mainActivity: 'Morning game drive',
+        'Relax at the lodge or enjoy a final morning game drive before transfer to Taita Hills Airstrip. Board your flight back to Nairobi, departing at 15:25.',
+      mainActivity: 'Transfer and fly out',
     },
   ],
   highlights: [
-    'Lions Bluff Lodge with panoramic conservancy views',
-    'Excellent rhino and elephant viewing',
-    'Exclusive conservancy experience',
-    'Bush flights from Nairobi',
+    'Lions Bluff Lodge with panoramic Taita Hills views',
+    'Lumo Conservancy game drives',
+    'Full-board accommodation with house drinks included',
+    'Bush flights from Nairobi \u2013 no overland travel',
   ],
   includes: [
-    'Return bush flights Nairobi\u2013Lewa',
-    'Park and conservancy entry fees',
-    'Professional English-speaking guide',
+    'Return flights Nairobi (Wilson)\u2013Taita Hills (ALS)',
+    'Transfers to/from Taita Hills Airstrip',
     '2 nights full-board accommodation at Lions Bluff Lodge',
-    'All game drives',
-    'Drinking water',
+    'All meals, picnic meals, and house drinks (wines, beer, sodas, coffee, tea)',
+    'Filled minibar',
+    'Shared day game drives in open 4\u00d74 vehicles',
   ],
   excludes: [
-    'International flights',
+    'Transfer to/from Wilson Airport',
+    'Conservancy fees',
+    'Premium brand spirits, champagne, fine wines, cognac',
+    'Optional spa treatments and massage',
+    'Items of personal nature',
     'Tips and gratuities',
-    'Personal items and travel insurance',
-    'Optional walking safari or night drive',
   ],
 };
 
@@ -1697,56 +1712,63 @@ const twoNightsLionsBluffHigh = {
   slug: '2-nights-lions-bluff-high-season',
   title: '2 Nights Lions Bluff Flying Package (High Season)',
   duration: '2 Nights / 3 Days',
-  price: 'From $2,100 / person',
+  price: 'From $2,530 / person',
   image: '/Photos/Lions-on-Jeep.jpg',
   category: 'fly-in',
   pickup: 'Nairobi (Wilson Airport)',
   accommodation: 'Lions Bluff Lodge',
   minPeople: 2,
   overview:
-    'The high-season version of our popular Lions Bluff flying package. Experience the Lewa Wildlife Conservancy during peak wildlife season, when large herds congregate and predator activity is at its highest. Stay at the iconic Lions Bluff Lodge with sweeping views.',
+    'The high-season version of the Lions Bluff flying package. Experience the Taita Hills and Lumo Conservancy during peak wildlife season, with the lodge\u2019s all-inclusive hospitality \u2013 including sundowners, a complimentary 30-minute massage, and drinks throughout your stay. Far from the crowds, this is one of Kenya\u2019s most exclusive bush experiences.',
   itinerary: [
     {
       day: 1,
-      title: 'Fly to Lewa Conservancy',
+      title: 'Fly to Taita Hills',
       description:
-        'Morning bush flight from Nairobi to Lewa. Transfer to Lions Bluff Lodge. After lunch, enjoy an afternoon game drive through the conservancy. High season brings larger herds and increased predator activity.',
-      mainActivity: 'Afternoon game drive',
+        'Afternoon flight from Nairobi\u2019s Wilson Airport to Taita Hills Airstrip (ALS), departing at 13:30. Transfer to Lions Bluff Lodge on the hillside of the Lumo Conservancy. Arrive in time for a sundowner as you take in the panoramic views over the Taita Hills.',
+      mainActivity: 'Arrival and sundowner',
     },
     {
       day: 2,
-      title: 'Full Day in Lewa',
+      title: 'Full Day in Lumo Conservancy',
       description:
-        'Full day of game drives in the conservancy. Lewa is one of Kenya\u2019s success stories in conservation, with thriving populations of rhinos, elephants, lions, and endangered species.',
-      mainActivity: 'Full-day game drives',
+        'Full day of game drives in the Lumo Conservancy in open 4\u00d74 camp vehicles, including a night drive during your stay. The conservancy offers diverse wildlife in an uncrowded setting. Complimentary 30-minute massage back at the lodge.',
+      mainActivity: 'Full-day game drives and night drive',
     },
     {
       day: 3,
-      title: 'Lewa to Nairobi',
+      title: 'Taita Hills to Nairobi',
       description:
-        'Early morning game drive, then breakfast and transfer to the airstrip for your flight back to Nairobi.',
-      mainActivity: 'Morning game drive',
+        'Enjoy a final morning or relax at the lodge before transfer to Taita Hills Airstrip. Depart at 15:25 on your flight back to Nairobi.',
+      mainActivity: 'Transfer and fly out',
     },
   ],
   highlights: [
-    'Peak season wildlife viewing',
-    'Lions Bluff Lodge panoramic setting',
-    'Conservation success story',
-    'Fast bush flights from Nairobi',
+    'Lions Bluff Lodge \u2013 peak-season wildlife viewing',
+    'All-inclusive: house wines, beer, sodas, filled minibar',
+    'Night game drive in the Lumo Conservancy',
+    'Sundowner and complimentary 30-minute massage',
+    'Exclusive Taita Hills setting, far from the crowds',
   ],
   includes: [
-    'Return bush flights Nairobi\u2013Lewa',
-    'Park and conservancy entry fees',
-    'Professional English-speaking guide',
+    'Return flights Nairobi (Wilson)\u2013Taita Hills (ALS)',
+    'Transfers to/from Taita Hills Airstrip',
     '2 nights full-board accommodation at Lions Bluff Lodge',
-    'All game drives',
-    'Drinking water',
+    'All meals and picnic meals',
+    'House wines, beer, sodas, coffee, tea, and filled minibar',
+    'Shared day game drives in open 4\u00d74 vehicles',
+    '1 night game drive',
+    'One sundowner and laundry',
+    'Complimentary 30-minute massage',
   ],
   excludes: [
-    'International flights',
+    'Transfer to/from Wilson Airport',
+    'Conservancy fees',
+    'Premium spirits, champagne, fine wines, cognac',
+    'Optional spa treatments beyond included massage',
+    'Exclusive use of vehicle',
+    'Items of personal nature',
     'Tips and gratuities',
-    'Personal items and travel insurance',
-    'Optional walking safari or night drive',
   ],
 };
 
@@ -1754,7 +1776,7 @@ const threeDaysMaraBushCamp = {
   slug: '3-days-mara-bush-camp-migration',
   title: '3 Days 2 Nights Mara Bush Camp Migration Offer',
   duration: '3 Days / 2 Nights',
-  price: 'From $1,800 / person',
+  price: 'From $1,295 / person',
   image: '/Photos/Wildbeast-walking.jpg',
   category: 'fly-in',
   pickup: 'Nairobi (Wilson Airport)',
@@ -1811,192 +1833,190 @@ const masaiSafari4Nights = {
   slug: 'masai-safari-4-nights-driving-flying',
   title: 'Masai Safari 4 Nights Driving & Flying Package',
   duration: '4 Nights / 5 Days',
-  price: 'From $2,800 / person',
+  price: 'From $2,530 / person',
   image: '/Photos/Hippo-plus-calf.jpg',
   category: 'fly-in',
-  pickup: 'Nairobi',
-  accommodation: 'Premium lodge',
+  pickup: 'Nairobi (JKIA)',
+  accommodation: 'Premium lodge or camp',
   minPeople: 2,
   overview:
-    'A hybrid driving and flying safari that combines the scenic overland journey to the Masai Mara with a fly-in return. Spend four nights in premium accommodation with expertly guided game drives. The mix of driving and flying offers both the landscape experience and time efficiency.',
+    'A hybrid driving and flying safari combining the scenic overland journey to Amboseli with a fly-in transfer to the Masai Mara. Two nights in Amboseli with views of Kilimanjaro, then fly into the Mara for two nights in the exclusive Ol Kinyei and Naboisho conservancies with walking treks, sundowners, and a Maasai warrior walk.',
   itinerary: [
     {
       day: 1,
-      title: 'Nairobi to Masai Mara (Drive)',
+      title: 'Nairobi to Amboseli',
       description:
-        'Depart Nairobi after breakfast and drive to the Masai Mara. Stop at the Great Rift Valley viewpoint and continue through Narok. Arrive for lunch and enjoy an afternoon game drive.',
+        'Pick up from JKIA and drive to Amboseli National Park, arriving in time for lunch. Head out for an afternoon game drive between 16:00 and 18:30, with views of Mount Kilimanjaro and Amboseli\u2019s famous elephant herds. Dinner and overnight at the camp.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Full Day in Masai Mara',
+      title: 'Full Day in Amboseli',
       description:
-        'Full day of game drives in the Mara. The reserve offers some of the best wildlife viewing in Africa, with large prides of lions, cheetahs, elephants, and wildebeest.',
+        'Early morning game drive from 06:00 to 09:00 to catch the African sunrise. Return for breakfast, then continue with a full-day game drive and packed picnic lunch. Amboseli is home to 400 bird species and some of the world\u2019s best elephant viewing, with Kilimanjaro as a backdrop.',
       mainActivity: 'Full-day game drives',
     },
     {
       day: 3,
-      title: 'Full Day in Masai Mara',
+      title: 'Fly Amboseli to Masai Mara',
       description:
-        'Another full day to explore different areas of the reserve. Visit the Mara River for hippo and crocodile sightings, or focus on the open plains for big cat action.',
-      mainActivity: 'Full-day game drives',
+        'After breakfast, check out and transfer to Wilson Airport for your scheduled flight to Ol Seki Airstrip. Met and transferred to Porini Mara Camp in the heart of the Mara. Lunch at the camp, then afternoon game drive exploring Ol Kinyei and Naboisho conservancies. Full board including drinks.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 4,
-      title: 'Masai Mara (Game Drive)',
+      title: 'Full Day in Masai Mara',
       description:
-        'Final full day in the Mara. Morning and afternoon game drives with a rest at the lodge during the midday heat. This is your last chance for any sightings you\u2019ve been hoping for.',
-      mainActivity: 'Game drives',
+        'Full day of game drives across Ol Kinyei and Naboisho conservancies with road and walking treks. Sundowners at a scenic viewpoint and a walk with Maasai warriors. Lunch and dinner at the camp on a full-board basis including drinks.',
+      mainActivity: 'Full-day game drives and walking safari',
     },
     {
       day: 5,
       title: 'Fly Masai Mara to Nairobi',
       description:
-        'Early morning game drive, then breakfast and transfer to the airstrip. Fly back to Nairobi, arriving by late morning. Transfer to your hotel or the airport.',
-      mainActivity: 'Morning game drive and fly out',
+        'After breakfast, transfer to the airstrip and fly back to Wilson Airport, arriving by late morning.',
+      mainActivity: 'Fly out',
     },
   ],
   highlights: [
-    'Scenic drive in, fast flight out',
-    'Four nights in premium Mara accommodation',
-    'Three full days of game drives',
-    'Flexible wildlife viewing pace',
+    'Amboseli elephants and Kilimanjaro views',
+    'Fly into the Masai Mara \u2013 no long overland drive',
+    'Porini Mara Camp in the Ol Kinyei Conservancy',
+    'Walking safari and sundowners with Maasai warriors',
+    'Full-board package including drinks',
   ],
   includes: [
-    'One-way bush flight Mara\u2013Nairobi',
-    'Park entry fees',
-    'Professional English-speaking guide',
+    'Airport pickup at JKIA',
+    'Return flights Wilson Airport\u2013Mara',
     '4 nights full-board accommodation',
-    'All game drives and transport',
-    'Drinking water',
+    'All game drives and walking safaris',
+    'Sundowners and Maasai warrior walk',
+    'Drinks throughout',
+    'Professional English-speaking driver-guide',
   ],
   excludes: [
     'International flights',
     'Tips and gratuities',
     'Personal items and travel insurance',
-    'Optional hot air balloon ride',
+    'Optional balloon safari',
   ],
 };
 
 const africanSplendours12Nights = {
   slug: 'african-splendours-12-nights-flying',
   title: 'African Splendours Safari 12 Nights Flying Package',
-  duration: '12 Nights / 13 Days',
-  price: 'From $6,500 / person',
+  duration: '12 Days / 11 Nights',
+  price: 'From $5,940 / person',
   image: '/Photos/Girrafes-looking.jpg',
   category: 'fly-in',
-  pickup: 'Nairobi (Wilson Airport)',
-  accommodation: 'Premium lodge or tented camp',
+  pickup: 'Nairobi (JKIA)',
+  accommodation: 'Premium tented camps and lodges',
   minPeople: 2,
   overview:
-    'The ultimate flying safari across Kenya. Over 12 nights, fly between the country\u2019s most prestigious conservancies and national parks. Stay in premium lodges, enjoy expert-guided game drives, and experience the full spectrum of Kenya\u2019s wildlife and landscapes without any long drives.',
+    'An 11-night flying safari across Kenya\u2019s most prestigious conservancies and national parks. Stay at Nairobi Tented Camp, Porini Amboseli Camp, Porini Rhino Camp, Porini Mara Camp, and Porini Lion Camp. Fly between destinations, enjoy conservancy-only game drives away from the crowds, and experience Ol Pejeta\u2019s chimpanzee sanctuary and endangered rhinos.',
   itinerary: [
     {
       day: 1,
-      title: 'Arrival in Nairobi',
+      title: 'Airport to Nairobi National Park',
       description:
-        'Arrive and transfer to your hotel. Meet your guide for a briefing.',
-      mainActivity: 'Arrival',
+        'Pick up from JKIA and transfer to Nairobi Tented Camp in Nairobi National Park for check-in and lunch. Afternoon game drive in the park, home to lions, rhinos, giraffes, and hippos against the city skyline. Dinner and overnight on full board.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Fly to Lewa Conservancy',
+      title: 'Full Day in Nairobi National Park',
       description:
-        'Morning flight to Lewa. Afternoon game drive in this pristine conservancy, home to rhinos, elephants, and Grevy\u2019s zebra.',
-      mainActivity: 'Afternoon game drive',
+        'Full day in Nairobi National Park with morning and afternoon shared game drives. Explore the park\u2019s diverse habitats \u2013 from open plains to rocky valleys \u2013 with full-board accommodation at the tented camp.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 3,
-      title: 'Full Day in Lewa',
+      title: 'Fly Nairobi to Amboseli',
       description:
-        'Full day exploring Lewa. The conservancy offers exclusive wildlife encounters with minimal other vehicles.',
-      mainActivity: 'Full-day game drives',
+        'After breakfast, transfer to Wilson Airport and board a scheduled flight to Selenkay Airstrip. Met and transferred to Porini Amboseli Camp in the Selenkay Conservancy. Lunch, then afternoon game drive in Amboseli. All-inclusive meal plan.',
+      mainActivity: 'Afternoon game drive',
     },
     {
       day: 4,
-      title: 'Fly to Samburu',
+      title: 'Full Day in Amboseli',
       description:
-        'Morning flight to Samburu. Afternoon game drive along the Ewaso Nyiro River, looking for the Samburu Special Five.',
-      mainActivity: 'Afternoon game drive',
+        'Full day of game drives in Amboseli and the Selenkay Conservancy with packed picnic lunch. Visit the Selenkay Conservancy for exclusive wildlife viewing away from the main park. All-inclusive.',
+      mainActivity: 'Full-day game drives',
     },
     {
       day: 5,
-      title: 'Full Day in Samburu',
+      title: 'Full Day in Amboseli',
       description:
-        'Full day in Samburu. The reserve\u2019s arid landscapes and unique species offer a contrasting experience to the lush Mara.',
-      mainActivity: 'Full-day game drives',
+        'Another full day exploring Amboseli. Visit a Maasai village to interact with warriors and learn about their culture. All-inclusive at Porini Amboseli Camp.',
+      mainActivity: 'Full-day game drives and Maasai village visit',
     },
     {
       day: 6,
-      title: 'Fly to Masai Mara',
+      title: 'Fly Amboseli to Ol Pejeta',
       description:
-        'Morning flight to the Masai Mara. Afternoon game drive in the reserve. The Mara offers Kenya\u2019s most iconic wildlife scenes.',
-      mainActivity: 'Afternoon game drive',
+        'After breakfast, fly to Wilson Airport and connect to a scheduled flight to Nanyuki Airstrip. Transfer to Porini Rhino Camp at Ol Pejeta Conservancy. Enjoy a boat ride on Lake Naivasha en route. Dinner and overnight on full board.',
+      mainActivity: 'Fly and transfer',
     },
     {
       day: 7,
-      title: 'Full Day in Masai Mara',
+      title: 'Full Day at Ol Pejeta Conservancy',
       description:
-        'Full day of game drives. Between July and October, the Great Migration adds an extraordinary dimension.',
-      mainActivity: 'Full-day game drives',
+        'Full day game drive at Ol Pejeta Conservancy. Visit the Chimpanzee Sanctuary, meet the canine anti-poaching unit, join a lion tracking session with researchers, and encounter the last northern white rhinos Najin and Fatu in the endangered species enclosure.',
+      mainActivity: 'Game drive and conservation visits',
     },
     {
       day: 8,
-      title: 'Full Day in Masai Mara',
+      title: 'Fly Ol Pejeta to Masai Mara',
       description:
-        'Another full day in the Mara. Focus on specific targets or explore new areas of the reserve.',
-      mainActivity: 'Full-day game drives',
-    },
-    {
-      day: 9,
-      title: 'Fly to Amboseli',
-      description:
-        'Morning flight to Amboseli. Afternoon game drive with Kilimanjaro views and elephant herds.',
+        'Fly to Ol Seki Airstrip and transfer to Porini Mara Camp in the Ol Kinyei Conservancy. Lunch at the camp, then afternoon game drive with daily Ol Kinyei and Naboisho Conservancy fees.',
       mainActivity: 'Afternoon game drive',
     },
     {
-      day: 10,
-      title: 'Full Day in Amboseli',
+      day: 9,
+      title: 'Full Day in Masai Mara',
       description:
-        'Full day in Amboseli. The park\u2019s open plains and elephant populations create some of Africa\u2019s most iconic images.',
+        'Full day of game drives across Ol Kinyei and Naboisho conservancies. The conservancies offer exclusive wildlife encounters with minimal other vehicles, with excellent lion, cheetah, and elephant viewing.',
       mainActivity: 'Full-day game drives',
+    },
+    {
+      day: 10,
+      title: 'Masai Mara \u2013 Move to Olare Motorogi',
+      description:
+        'Game drive en route via Naboisho Conservancy into Olare Motorogi Conservancy. Transfer to Porini Lion Camp for 3 nights. Daily Olare Motorogi Conservancy fees included.',
+      mainActivity: 'Game drive and transfer',
     },
     {
       day: 11,
-      title: 'Fly to Ol Pejeta',
+      title: 'Full Day in Olare Motorogi / Masai Mara',
       description:
-        'Morning flight to Ol Pejeta. Afternoon game drive. Visit the Chimpanzee Sanctuary and northern white rhino enclosure.',
-      mainActivity: 'Game drive and conservation visit',
-    },
-    {
-      day: 12,
-      title: 'Full Day in Ol Pejeta',
-      description:
-        'Full day at Ol Pejeta. The conservancy offers diverse wildlife in a beautiful highland setting.',
+        'Full day of game drives in Olare Motorogi Conservancy and one day entry to the Masai Mara Game Reserve. Exceptional big cat viewing in one of the Mara\u2019s most exclusive areas.',
       mainActivity: 'Full-day game drives',
     },
     {
-      day: 13,
-      title: 'Fly to Nairobi and Departure',
+      day: 12,
+      title: 'Fly Masai Mara to Nairobi',
       description:
-        'Morning flight back to Nairobi. Transfer to the airport for your departure flight.',
-      mainActivity: 'Fly out and departure',
+        'Final morning game drive, then transfer to the airstrip for your flight back to Wilson Airport.',
+      mainActivity: 'Morning game drive and fly out',
     },
   ],
   highlights: [
-    'Five destinations connected by bush flights',
-    'Premium lodges and tented camps',
-    'Exclusive conservancy experiences',
-    'No long overland drives',
-    'Comprehensive Kenya wildlife experience',
+    'Five premium conservancies and parks across Kenya',
+    'Nairobi National Park, Selenkay, Ol Pejeta, Ol Kinyei, Olare Motorogi',
+    'Chimpanzee sanctuary and northern white rhinos at Ol Pejeta',
+    'Maasai village visit in Amboseli',
+    'Porini camps with conservancy-only game drives',
+    'All bush flights between destinations',
   ],
   includes: [
+    'Airport pickup at JKIA',
     'All bush flights between destinations',
     'Professional English-speaking guide throughout',
     'Park and conservancy entry fees',
-    '12 nights premium accommodation',
-    'All meals as specified',
-    'Drinking water throughout',
+    '11 nights premium accommodation (full board / all inclusive)',
+    'All game drives and conservation activities',
+    'Boat ride on Lake Naivasha',
+    'Maasai village visit',
   ],
   excludes: [
     'International flights',
@@ -2012,76 +2032,77 @@ const sevenDaysBushNorthCoast = {
   slug: '7-days-bush-and-north-coast',
   title: '7 Days Bush and North Coast',
   duration: '7 Days / 6 Nights',
-  price: 'From $2,400 / person',
-  image: '/Photos/Flamengos.jpg',
+  price: 'From $1,385 / person',
+  image: '/Photos/palmtrees1.jpg',
   category: 'beach',
   pickup: 'Nairobi',
   accommodation: 'Safari lodge + beach hotel',
   minPeople: 2,
   overview:
-    'The perfect combination of safari and beach. Spend four days exploring the Masai Mara\u2019s legendary wildlife, then fly to the north coast for three days of relaxation on Malindi\u2019s pristine beaches. This itinerary balances adventure and rest in two of Kenya\u2019s finest settings.',
+    'Combine two nights exploring Tsavo West and Tsavo East with four nights of relaxation on the north coast. Drive from Nairobi through the Tsavo wilderness, then continue to the Indian Ocean for beach time at Bamburi, Shanzu, and Watamu.',
   itinerary: [
     {
       day: 1,
-      title: 'Nairobi to Masai Mara',
+      title: 'Nairobi to Tsavo West',
       description:
-        'Depart Nairobi after breakfast and drive to the Masai Mara. Arrive for lunch and enjoy an afternoon game drive in the reserve.',
+        'Pick up from the airport and depart for Tsavo West National Park, arriving in time for lunch and an afternoon game drive. Tsavo West is known as the land of lava, springs, man-eaters, and magical sunsets. Visit Mzima Springs, where hippos and crocodiles are viewed through an underwater observation chamber, and the dramatic Shetani lava flows.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Full Day in Masai Mara',
+      title: 'Tsavo West to Tsavo East',
       description:
-        'Full day of game drives with a picnic lunch. The Mara\u2019s open plains support enormous populations of wildlife, including lions, cheetahs, elephants, and wildebeest.',
-      mainActivity: 'Full-day game drives',
+        'Morning game drive in Tsavo West, then cross into Tsavo East National Park. Afternoon game drive through the park\u2019s red-earth wilderness. Tsavo East is home to the Tsavo lions, red elephants, Mudanda Rock, and Aruba Dam.',
+      mainActivity: 'Morning and afternoon game drives',
     },
     {
       day: 3,
-      title: 'Full Day in Masai Mara',
+      title: 'Tsavo East to North Coast',
       description:
-        'Another full day in the Mara. Focus on big cat sightings or explore the Mara River for hippos and crocodiles.',
-      mainActivity: 'Full-day game drives',
-    },
-    {
-      day: 4,
-      title: 'Masai Mara to Nairobi to Malindi',
-      description:
-        'Morning game drive, then drive back to Nairobi. Catch an afternoon flight to Malindi on the north coast. Transfer to your beach hotel.',
+        'Morning game drive in Tsavo East, then check out and drive to the north coast. Arrive at your beach hotel in the Bamburi, Shanzu, or Watamu area for the next four nights.',
       mainActivity: 'Transfer to the coast',
     },
     {
-      day: 5,
-      title: 'Malindi Beach',
+      day: 4,
+      title: 'North Coast Beach',
       description:
-        'Full day at leisure on Malindi\u2019s white-sand beaches. Options include snorkelling, diving, deep-sea fishing, or simply relaxing by the Indian Ocean.',
+        'Full day at leisure on the north coast. Visit Bamburi Beach, Shanzu Beach, or explore Watamu Marine National Park. Optional activities include Haller Park, Fort Jesus, snorkelling, and dhow cruises.',
+      mainActivity: 'Beach day',
+    },
+    {
+      day: 5,
+      title: 'North Coast Beach',
+      description:
+        'Another day at leisure. Explore the old town of Malindi, take a boat trip to the Watamu marine caves, or simply relax by the Indian Ocean.',
       mainActivity: 'Beach day',
     },
     {
       day: 6,
-      title: 'Malindi Beach',
+      title: 'North Coast Beach',
       description:
-        'Another day at leisure. Visit the Malindi Marine National Park, explore the old town, or take a dhow cruise.',
+        'Full day at leisure. Options include deep-sea fishing, snorkelling the coral reefs, or a visit to the Marine National Park.',
       mainActivity: 'Beach day',
     },
     {
       day: 7,
-      title: 'Malindi to Nairobi',
+      title: 'North Coast Departure',
       description:
-        'Transfer to Malindi Airport for your flight back to Nairobi, or continue your onward travel plans.',
+        'Breakfast, check out, and transfer to the airport for your onward flight or continue your travel plans.',
       mainActivity: 'Airport transfer',
     },
   ],
   highlights: [
-    'Three full days in the Masai Mara',
-    'Flight transfer to the coast \u2013 no long drive',
-    'Malindi beach relaxation',
-    'Marine park and snorkelling options',
+    'Two nights in Tsavo West and Tsavo East',
+    'Four nights on the north coast beaches',
+    'Mzima Springs and Shetani lava flows',
+    'Bamburi, Shanzu, and Watamu beaches',
+    'No flights \u2013 all overland transfer to the coast',
   ],
   includes: [
-    'Domestic flight Nairobi\u2013Malindi (return)',
     'Park entry fees',
-    'Professional driver-guide for safari portion',
-    '4 nights safari lodge + 2 nights beach hotel',
+    'Professional driver-guide',
+    'Safari transport throughout',
+    '2 nights safari lodge + 4 nights beach hotel',
     'All meals on safari, breakfast at beach hotel',
     'Drinking water on safari',
   ],
@@ -2090,7 +2111,7 @@ const sevenDaysBushNorthCoast = {
     'Beach hotel meals beyond breakfast',
     'Tips and gratuities',
     'Personal items and travel insurance',
-    'Beach activities',
+    'Beach activities and marine park fees',
   ],
 };
 
@@ -2098,76 +2119,77 @@ const sevenDaysBushDianiBeach = {
   slug: '7-days-bush-and-diani-beach',
   title: '7 Days Bush and Diani Beach',
   duration: '7 Days / 6 Nights',
-  price: 'From $2,500 / person',
+  price: 'From $1,385 / person',
   image: '/Photos/Elephants-hugging.jpg',
   category: 'beach',
   pickup: 'Nairobi',
   accommodation: 'Safari lodge + beach hotel',
   minPeople: 2,
   overview:
-    'Combine the wildlife of the Masai Mara with the tropical paradise of Diani Beach. Four days of safari followed by three days on one of East Africa\u2019s finest beaches. Fly between destinations for a seamless bush-to-beach experience.',
+    'Combine two nights exploring Tsavo West and Tsavo East with four nights on Diani Beach, one of East Africa\u2019s finest beaches. Drive from Nairobi through the Tsavo wilderness, then continue to the south coast for white sands, coral reefs, and the Indian Ocean.',
   itinerary: [
     {
       day: 1,
-      title: 'Nairobi to Masai Mara',
+      title: 'Nairobi to Tsavo West',
       description:
-        'Depart Nairobi and drive to the Masai Mara. Arrive for lunch and enjoy an afternoon game drive.',
+        'Pick up from the airport and depart for Tsavo West National Park, arriving in time for lunch and an afternoon game drive. Known as the land of lava, springs, man-eaters, and magical sunsets, Tsavo West offers Mzima Springs and the dramatic Shetani lava flows.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Full Day in Masai Mara',
+      title: 'Tsavo West to Tsavo East',
       description:
-        'Full day of game drives. The Mara offers extraordinary wildlife density and diversity.',
-      mainActivity: 'Full-day game drives',
+        'Morning game drive in Tsavo West, then cross into Tsavo East National Park. Afternoon game drive through the red-earth plains. Tsavo East is home to red elephants, Mudanda Rock, Lugard Falls, and Aruba Dam.',
+      mainActivity: 'Morning and afternoon game drives',
     },
     {
       day: 3,
-      title: 'Full Day in Masai Mara',
+      title: 'Tsavo East to Diani Beach',
       description:
-        'Another full day in the Mara. Focus on specific wildlife targets or explore different areas of the reserve.',
-      mainActivity: 'Full-day game drives',
-    },
-    {
-      day: 4,
-      title: 'Masai Mara to Diani Beach',
-      description:
-        'Morning game drive, then fly from the Mara airstrip to Ukunda (Diani). Transfer to your beach hotel for the next three nights.',
+        'Morning game drive in Tsavo East, then check out and drive to Diani Beach on the south coast. Arrive at your beach hotel for the next four nights.',
       mainActivity: 'Transfer to the coast',
     },
     {
-      day: 5,
+      day: 4,
       title: 'Diani Beach',
       description:
         'Full day at leisure on Diani\u2019s award-winning white-sand beach. Options include kite surfing, snorkelling the coral reefs, deep-sea fishing, or a dhow sunset cruise.',
       mainActivity: 'Beach day',
     },
     {
+      day: 5,
+      title: 'Diani Beach',
+      description:
+        'Another day at leisure. Visit the Colobus Conservation Centre, explore Shimba Hills National Reserve, or simply unwind by the Indian Ocean.',
+      mainActivity: 'Beach day',
+    },
+    {
       day: 6,
       title: 'Diani Beach',
       description:
-        'Another day at leisure. Visit the Colobus Conservation Centre, explore Shimba Hills National Reserve, or simply unwind by the ocean.',
+        'Full day at leisure. Options include a day trip to Wasini Island, snorkelling at Kisite Marine Park, or a visit to the Mwalunganje Elephant Sanctuary.',
       mainActivity: 'Beach day',
     },
     {
       day: 7,
-      title: 'Diani to Nairobi',
+      title: 'Diani Departure',
       description:
-        'Transfer to Ukunda Airport for your flight back to Nairobi, or continue your onward travel plans.',
+        'Breakfast, check out, and transfer to Ukunda Airport for your onward flight or continue your travel plans.',
       mainActivity: 'Airport transfer',
     },
   ],
   highlights: [
-    'Three full days in the Masai Mara',
-    'Diani Beach \u2013 East Africa\u2019s top beach',
-    'Flight transfers between bush and beach',
-    'Coral reef snorkelling and water sports',
+    'Two nights in Tsavo West and Tsavo East',
+    'Four nights on Diani Beach',
+    'Mzima Springs and Shetani lava flows',
+    'White-sand Diani Beach and coral reefs',
+    'No flights \u2013 all overland transfer to the coast',
   ],
   includes: [
-    'Domestic flights Nairobi\u2013Mara and Mara\u2013Diani (return)',
     'Park entry fees',
-    'Professional driver-guide for safari portion',
-    '4 nights safari lodge + 2 nights beach hotel',
+    'Professional driver-guide',
+    'Safari transport throughout',
+    '2 nights safari lodge + 4 nights beach hotel',
     'All meals on safari, breakfast at beach hotel',
     'Drinking water on safari',
   ],
@@ -2186,48 +2208,50 @@ const budgetTwoDayAmboseliMombasa = {
   slug: 'budget-2-days-1-night-amboseli-from-mombasa',
   title: '2 Days 1 Night Amboseli National Park Safari (Start in Mombasa)',
   duration: '2 Days / 1 Night',
-  price: 'From $280 / person',
+  price: 'From $580 / person',
   image: '/Photos/Girrafe-feeding.jpg',
   category: 'budget',
   pickup: 'Mombasa',
-  accommodation: 'Budget tented camp',
+  accommodation: 'Tented camp or lodge',
   minPeople: 2,
   overview:
-    'An affordable two-day safari from the coast to Amboseli National Park. Ideal for travellers based in Mombasa or Diani who want a quick, budget-friendly taste of the bush with elephant sightings and Kilimanjaro views.',
+    'Starting on the coast, this quick two-day safari takes you from Mombasa to Amboseli National Park for elephant and Kilimanjaro experiences, then returns you to Nairobi. The SGR train speeds you inland, making this a seamless bush-and-beach escape that links Mombasa to the capital in two days.',
   itinerary: [
     {
       day: 1,
-      title: 'Mombasa to Amboseli',
+      title: 'Mombasa to Amboseli National Park',
       description:
-        'Early morning departure from your hotel. Drive north towards Amboseli, arriving for lunch. Afternoon game drive with views of Mount Kilimanjaro and Amboseli\u2019s elephant herds.',
+        'Early morning pick up from your hotel in Mombasa. Board the 8:00 SGR train to Emali, arriving around 1:00 pm where your driver-guide transfers you to your lodge in Amboseli. After lunch, enjoy your first game drive with views of Mount Kilimanjaro and Amboseli\u2019s famous elephant herds. Return to the lodge for dinner and overnight.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
-      title: 'Amboseli to Mombasa',
+      title: 'Amboseli to Nairobi',
       description:
-        'Rise early for a sunrise game drive. Return for breakfast, check out, and drive back to Mombasa, arriving by late afternoon.',
+        'Rise early for a sunrise game drive, capturing Kilimanjaro in the morning light and exploring the swamps that attract hippos and flocks of birds. Return for breakfast and check out. Drive north to Nairobi with optional stops along the way, arriving in the late afternoon. Drop off at your hotel in the capital.',
       mainActivity: 'Morning game drive',
     },
   ],
   highlights: [
-    'Budget-friendly from the coast',
-    'Amboseli elephant herds',
-    'Kilimanjaro views',
-    'Quick safari escape',
+    'Convenient SGR train departure from Mombasa',
+    'Amboseli elephant herds and Kilimanjaro',
+    'Sunrise and afternoon game drives',
+    'Ends in Nairobi after a quick safari escape',
   ],
   includes: [
     'Park entry fees (non-residents)',
-    'Professional driver-guide',
-    'Transport in a safari van',
-    '1 night budget accommodation',
+    'Professional English-speaking driver-guide',
+    'SGR train ticket from Mombasa to Emali',
+    'Transport in a safari Landcruiser',
+    '1 night full-board accommodation',
     'Game drives as per itinerary',
     'Drinking water',
   ],
   excludes: [
-    'Hotel pick-up and drop-off (can be arranged)',
+    'Hotel pick-up in Mombasa (can be arranged)',
     'Tips and gratuities',
-    'Personal items',
+    'Personal items and travel insurance',
+    'Optional activities such as a Maasai village visit',
   ],
 };
 
@@ -2235,48 +2259,48 @@ const budgetTwoDayTsavoFromDianiMombasa = {
   slug: 'budget-2-day-tsavo-east-from-diani-mombasa',
   title: '2-Day Tsavo East Safari from Diani or Mombasa',
   duration: '2 Days / 1 Night',
-  price: 'From $250 / person',
+  price: 'From $380 / person',
   image: '/Photos/Antelopes-fighting.jpg',
   category: 'budget',
   pickup: 'Diani or Mombasa',
-  accommodation: 'Budget tented camp',
+  accommodation: 'Tented camp or lodge',
   minPeople: 2,
   overview:
-    'A budget-friendly two-day safari into Tsavo East from the coast. Tsavo\u2019s vast open plains and red elephants make for an exciting short safari, even on a tighter budget.',
+    'A short but rewarding safari from the coast into Tsavo East National Park. Tsavo is one of Kenya\u2019s oldest and largest parks, famous for its red elephants and vast open plains. This two-day itinerary offers excellent game viewing with minimal travel time from the beach.',
   itinerary: [
     {
       day: 1,
       title: 'Diani/Mombasa to Tsavo East',
       description:
-        'Early morning departure. Drive into Tsavo East National Park, arriving for lunch. Afternoon game drive looking for elephants, lions, and buffalo.',
+        'Pick up from your beach hotel at 5:30 am and depart for Tsavo East National Park, the largest national park in Kenya, split east and west by the highway. Enjoy a game drive en route to your lodge, check in at Voi Safari Lodge in time for lunch, relax, then head back into the park for your afternoon game drive. Return to the lodge as the sun sets.',
       mainActivity: 'Afternoon game drive',
     },
     {
       day: 2,
       title: 'Tsavo East to Diani/Mombasa',
       description:
-        'Morning game drive, then breakfast and check out. Drive back to the coast, arriving by early afternoon.',
+        'Rise early for a morning game drive across the park. The early hours offer the best chances for predator sightings as lions and leopards are still active. Return for breakfast, check out, and drive back to your hotel, arriving by early afternoon.',
       mainActivity: 'Morning game drive',
     },
   ],
   highlights: [
-    'Affordable coastal safari',
     'Red elephants of Tsavo',
+    'Lugard Falls and Aruba Dam',
     'Open-plain game viewing',
-    'Flexible departure points',
+    'Convenient coastal departure',
   ],
   includes: [
     'Park entry fees (non-residents)',
-    'Professional driver-guide',
-    'Transport in a safari van',
-    '1 night budget accommodation',
-    'Game drives as per itinerary',
+    'Professional English-speaking driver-guide',
+    'Transport in a 4x4 safari Landcruiser',
+    '1 night full-board accommodation',
+    'All game drives as per itinerary',
     'Drinking water',
   ],
   excludes: [
     'Hotel pick-up and drop-off (can be arranged)',
     'Tips and gratuities',
-    'Personal items',
+    'Personal items and travel insurance',
   ],
 };
 
@@ -2284,33 +2308,33 @@ const budgetOneDayTsavoFromDiani = {
   slug: 'budget-1-day-tsavo-east-from-diani',
   title: '1-Day Tsavo East National Park Safari from Diani',
   duration: '1 Day',
-  price: 'From $160 / person',
+  price: 'From $350 / person',
   image: '/Photos/Zebra-feeding.jpg',
   category: 'budget',
   pickup: 'Diani',
   accommodation: 'N/A (day trip)',
   minPeople: 2,
   overview:
-    'A full-day budget day trip from Diani to Tsavo East. Perfect for beachgoers who want a quick, affordable wildlife experience without an overnight stay.',
+    'A full-day excursion from Diani Beach into Tsavo East National Park. Experience Kenya\u2019s wilderness without an overnight stay, returning to the beach by evening. Ideal for travellers who want a quick wildlife experience alongside their coastal holiday.',
   itinerary: [
     {
       day: 1,
       title: 'Diani to Tsavo East and Back',
       description:
-        'Depart Diani early and drive to Tsavo East. Full-day game drive with a packed lunch in the park. Return to Diani in the early evening.',
+        'Pick up from your hotel and depart before sunrise, following the Mombasa\u2013Nairobi road to the first gate at Tsavo East National Park. Enter the park via Bachuma gate and embark on your first game drive in search of the red elephants, lions nicknamed the \u201cman-eaters of Tsavo,\u201d buffalos, cheetahs, giraffes, and antelopes. Visit the famous Aruba Dam, where wildlife gathers especially in the dry season. Stop for lunch at a restaurant, then enjoy another game drive before driving out of the park and returning to your beach resort, arriving late in the afternoon.',
       mainActivity: 'Full-day game drive',
     },
   ],
   highlights: [
-    'Most affordable safari from Diani',
-    'Red elephants and open plains',
-    'Day trip \u2013 no overnight needed',
-    'Expert driver-guide',
+    'Day trip from Diani Beach',
+    'Red elephants and the man-eaters of Tsavo',
+    'Aruba Dam and Lugard Falls',
+    'Convenient for beach holidaymakers',
   ],
   includes: [
     'Park entry fees (non-residents)',
-    'Professional driver-guide',
-    'Transport in a safari van',
+    'Professional English-speaking driver-guide',
+    'Transport in a 4x4 safari Landcruiser',
     'Packed picnic lunch',
     'Drinking water',
   ],
@@ -2325,33 +2349,33 @@ const budgetOneDayTsavoFromMombasa = {
   slug: 'budget-1-day-tsavo-east-from-mombasa',
   title: '1-Day Tsavo East Safari from Mombasa',
   duration: '1 Day',
-  price: 'From $160 / person',
+  price: 'From $350 / person',
   image: '/Photos/Wildbeast-walking.jpg',
   category: 'budget',
   pickup: 'Mombasa',
   accommodation: 'N/A (day trip)',
   minPeople: 2,
   overview:
-    'A full-day budget day trip from Mombasa to Tsavo East National Park. An affordable way to experience Kenya\u2019s wilderness for travellers based in the city.',
+    'A full-day game drive from Mombasa into Tsavo East National Park, just 200 km away. Experience the park\u2019s iconic red elephants, open plains, and diverse wildlife \u2013 including the famed man-eater lions \u2013 before returning to the city by late afternoon.',
   itinerary: [
     {
       day: 1,
       title: 'Mombasa to Tsavo East and Back',
       description:
-        'Depart Mombasa early and drive to Tsavo East. Full-day game drive with a packed lunch. Return to Mombasa in the early evening.',
+        'Pick up from your hotel or resort and depart before sunrise, following the Mombasa\u2013Nairobi road to the first gate at Tsavo East National Park. Enter the park via Bachuma gate and embark on your first game drive in search of the red elephants, the man-eaters of Tsavo, buffalos, cheetahs, giraffes, and antelopes. Visit the famous Aruba Dam, where wildlife gathers especially in the dry season. Stop for lunch at a restaurant, then enjoy another game drive before driving out of the park and returning to Mombasa, arriving late in the afternoon.',
       mainActivity: 'Full-day game drive',
     },
   ],
   highlights: [
-    'Budget day trip from Mombasa',
-    'Red elephants of Tsavo',
-    'Open-plain game viewing',
-    'Flexible timing',
+    'Day trip from Mombasa',
+    'Red elephants and the man-eaters of Tsavo',
+    'Aruba Dam and Lugard Falls',
+    'Expert driver-guide',
   ],
   includes: [
     'Park entry fees (non-residents)',
-    'Professional driver-guide',
-    'Transport in a safari van',
+    'Professional English-speaking driver-guide',
+    'Transport in a 4x4 safari Landcruiser',
     'Packed picnic lunch',
     'Drinking water',
   ],

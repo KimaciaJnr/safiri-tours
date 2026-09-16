@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Clock, Sparkles, Pause, Play } from 'lucide-react';
+import { ArrowRight, Sparkles, Pause, Play } from 'lucide-react';
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -52,8 +52,8 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-5xl flex-col justify-between px-6 py-20 text-white">
-        <div className="mt-8 max-w-3xl space-y-6">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-5xl flex-col justify-end px-6 py-16 text-white md:py-20">
+        <div className="max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs text-gray-200 backdrop-blur-md">
             <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
             <span>Group Tours · Road Trips · Adventures Across Africa</span>
@@ -67,7 +67,7 @@ export default function Hero() {
             Join affordable, social group tours and road trips across Africa. We handle the planning and logistics — you meet new people, relax, and make memories that last long after you're home.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-4">
+          <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="#inquiry"
               className="flex items-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-brand-terracotta-dark"
@@ -83,54 +83,32 @@ export default function Hero() {
               See How It Works
             </a>
           </div>
-
-          <div className="flex items-center gap-2 pt-2 text-xs text-gray-300">
-            <Clock className="h-3.5 w-3.5 text-brand-gold" />
-            <span>Affordable value · Small group size · Logistics handled for you</span>
-          </div>
         </div>
 
-        <div className="space-y-8 pt-16">
-          <div className="grid max-w-xl grid-cols-3 gap-8 border-t border-white/20 pt-8">
-            <div>
-              <div className="text-2xl font-extrabold text-white md:text-3xl">12+</div>
-              <div className="mt-1 text-xs text-gray-300">Destinations across Africa</div>
-            </div>
-            <div className="border-l border-white/20 pl-8">
-              <div className="text-2xl font-extrabold text-white md:text-3xl">50+</div>
-              <div className="mt-1 text-xs text-gray-300">Trips organized & counting</div>
-            </div>
-            <div className="border-l border-white/20 pl-8">
-              <div className="text-2xl font-extrabold text-white md:text-3xl">100%</div>
-              <div className="mt-1 text-xs text-gray-300">Logistics handled for you</div>
-            </div>
-          </div>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <button
+            type="button"
+            onClick={() => setPaused((prev) => !prev)}
+            aria-pressed={paused}
+            aria-label={paused ? 'Play slideshow' : 'Pause slideshow'}
+            className="flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md transition-colors hover:bg-white/20"
+          >
+            {paused ? <Play className="h-3.5 w-3.5" /> : <Pause className="h-3.5 w-3.5" />}
+            {paused ? 'Play' : 'Pause'}
+          </button>
 
-          <div className="flex flex-wrap items-center gap-4">
-            <button
-              type="button"
-              onClick={() => setPaused((prev) => !prev)}
-              aria-pressed={paused}
-              aria-label={paused ? 'Play slideshow' : 'Pause slideshow'}
-              className="flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md transition-colors hover:bg-white/20"
-            >
-              {paused ? <Play className="h-3.5 w-3.5" /> : <Pause className="h-3.5 w-3.5" />}
-              {paused ? 'Play' : 'Pause'}
-            </button>
-
-            <div className="flex items-center gap-2" role="group" aria-label="Video slideshow controls">
-              {slides.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveSlide(idx)}
-                  aria-label={`Go to video ${idx + 1}`}
-                  aria-current={idx === activeSlide}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    activeSlide === idx ? 'w-8 bg-brand-terracotta' : 'w-2 bg-white/40 hover:bg-white/70'
-                  }`}
-                />
-              ))}
-            </div>
+          <div className="flex items-center gap-2" role="group" aria-label="Video slideshow controls">
+            {slides.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveSlide(idx)}
+                aria-label={`Go to video ${idx + 1}`}
+                aria-current={idx === activeSlide}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeSlide === idx ? 'w-8 bg-brand-terracotta' : 'w-2 bg-white/40 hover:bg-white/70'
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>

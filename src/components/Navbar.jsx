@@ -3,7 +3,7 @@ import { ChevronDown, Compass, House, Menu, X } from 'lucide-react';
 
 const safariLinks = [
   { label: 'Kenya Safaris from Nairobi', href: '#nairobi-safari' },
-  { label: 'Kenya Safaris from Coast (Mombasa, Diani, Watamu)', href: '#coastal-safari' },
+  { label: 'Kenya Safaris from the Coast (Mombasa, Diani, Watamu)', href: '#coastal-safari' },
   { label: 'Kenya Fly-In Safaris', href: '#fly-in-safari' },
   { label: 'Kenya Beach Safaris', href: '#beach-safari' },
   { label: 'Budget Maasai Mara Deals', href: '#budget-mara' },

@@ -36,6 +36,10 @@ function App() {
   const [hash, setHash] = useState(() => window.location.hash);
 
   useEffect(() => {
+    if (window.history.scrollRestoration) {
+      window.history.scrollRestoration = 'manual';
+    }
+
     const onHashChange = () => setHash(window.location.hash);
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
@@ -61,14 +65,17 @@ function App() {
   useEffect(() => {
     if (isSection) {
       const el = document.getElementById(key);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      window.scrollTo(0, 0);
-      requestAnimationFrame(() => {
-        const main = document.getElementById('main');
-        if (main) main.focus({ preventScroll: true });
-      });
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      return;
     }
+
+    window.scrollTo(0, 0);
+    requestAnimationFrame(() => {
+      const main = document.getElementById('main');
+      if (main) main.focus({ preventScroll: true });
+    });
   }, [key, isSection]);
 
   if (isSection) return <Home key={query || key} />;

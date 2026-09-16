@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from 'vitest';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import NairobiSafariPage from './NairobiSafariPage';
 import CoastalSafariPage from './CoastalSafariPage';
 import FlyInSafariPage from './FlyInSafariPage';
@@ -13,10 +13,10 @@ const pages = [
   { name: 'Home', Component: Home, heading: /The journey is/i },
   { name: 'About', Component: AboutPage, heading: 'About Safiri Expedition Tours' },
   { name: 'Nairobi', Component: NairobiSafariPage, heading: /Nairobi safari packages/i },
-  { name: 'Coastal', Component: CoastalSafariPage, heading: 'Coastal Safari' },
-  { name: 'Fly-In', Component: FlyInSafariPage, heading: 'Fly-In Safari' },
-  { name: 'Beach', Component: BeachSafariPage, heading: 'Beach & Safari' },
-  { name: 'Budget Mara', Component: BudgetMaraPage, heading: 'Budget Mara' },
+  { name: 'Coastal', Component: CoastalSafariPage, heading: 'Safaris from the Coast' },
+  { name: 'Fly-In', Component: FlyInSafariPage, heading: 'Fly-In Safaris' },
+  { name: 'Beach', Component: BeachSafariPage, heading: 'Bush & Beach Safaris' },
+  { name: 'Budget Mara', Component: BudgetMaraPage, heading: 'Budget Safaris' },
 ];
 
 describe('page smoke tests', () => {
@@ -32,6 +32,19 @@ describe('page smoke tests', () => {
   it('Nairobi page renders all 13 safari packages', () => {
     render(<NairobiSafariPage />);
     expect(screen.getAllByRole('link', { name: /View details/i })).toHaveLength(13);
+  });
+
+  it('coastal safari filters group packages by trip length', () => {
+    render(<CoastalSafariPage />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Day trips/i }));
+    expect(screen.getAllByRole('link', { name: /View details/i })).toHaveLength(2);
+
+    fireEvent.click(screen.getByRole('button', { name: /Overnight breaks/i }));
+    expect(screen.getAllByRole('link', { name: /View details/i })).toHaveLength(2);
+
+    fireEvent.click(screen.getByRole('button', { name: /5-Day tours/i }));
+    expect(screen.getAllByRole('link', { name: /View details/i })).toHaveLength(2);
   });
 
   it('SafariDetailPage renders the package content for a valid slug', () => {

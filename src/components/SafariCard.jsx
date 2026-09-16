@@ -6,7 +6,7 @@ export default function SafariCard({ pkg }) {
       href={`#safari/${pkg.slug}`}
       className="group overflow-hidden rounded-[1.75rem] border border-line bg-white shadow-[0_18px_45px_rgba(17,24,39,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(17,24,39,0.08)]"
     >
-      <div className="relative h-52 overflow-hidden">
+      <div className="relative h-32 overflow-hidden md:h-36">
         <img
           src={pkg.image}
           alt={pkg.title}
@@ -18,9 +18,9 @@ export default function SafariCard({ pkg }) {
         </span>
       </div>
 
-      <div className="space-y-4 p-5">
+      <div className="space-y-2 p-4 md:p-4.5">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-terracotta">Safari package</p>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-terracotta">Safari package</p>
           <h3 className="mt-2 text-lg font-bold leading-snug text-ink">{pkg.title}</h3>
         </div>
 

@@ -43,7 +43,7 @@ export default function WhatWeOffer() {
 
   return (
     <section id="safari-guide" className="bg-cream py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center space-y-4">
+      <div className="w-full text-center space-y-4">
         <span className="text-xs font-semibold tracking-wider text-teal uppercase">
           SAFARI GUIDE
         </span>

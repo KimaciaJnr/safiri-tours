@@ -73,7 +73,7 @@ export default function InquiryForm() {
 
   return (
     <section id="inquiry" className="bg-cream-light py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
         <div className="space-y-6">

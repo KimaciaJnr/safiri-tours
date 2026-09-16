@@ -43,7 +43,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-cream text-ink">
       <Navbar />
 
-      <main id="main" tabIndex={-1} className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+      <main id="main" tabIndex={-1} className="w-full px-6 py-16 lg:px-10">
         <header className="mb-12 overflow-hidden rounded-[2rem] border border-line bg-white shadow-[0_18px_45px_rgba(17,24,39,0.04)]">
           <div className="grid md:grid-cols-[1.15fr_0.85fr]">
             <div className="p-8 md:p-12">

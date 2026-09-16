@@ -42,12 +42,12 @@ export default function Navbar() {
         Skip to main content
       </a>
 
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
         <a href="#home" className="flex items-center gap-3">
           <img
             src="/Photos/Logo_page-0001.jpg"
             alt="Safiri Expedition Tours"
-            className="h-12 w-auto object-contain"
+            className="h-10 w-auto object-contain sm:h-12"
           />
         </a>
 
@@ -100,7 +100,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
-            className="md:hidden p-2 text-ink hover:text-brand-terracotta transition-colors focus:outline-none"
+            className="flex h-11 w-11 items-center justify-center text-ink hover:text-brand-terracotta transition-colors focus:outline-none md:hidden"
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -115,9 +115,9 @@ export default function Navbar() {
           id="mobile-menu"
           ref={mobileMenuRef}
           aria-label="Mobile navigation"
-          className="md:hidden border-t border-line bg-cream px-6 py-4 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto"
+          className="max-h-[calc(100svh-4rem)] space-y-1 overflow-y-auto border-t border-line bg-cream px-4 py-4 sm:px-6 md:hidden"
         >
-          <a href="#home" onClick={() => setMenuOpen(false)} className="block py-2.5 text-ink font-medium hover:text-brand-terracotta">
+          <a href="#home" onClick={() => setMenuOpen(false)} className="flex min-h-11 items-center text-ink font-medium hover:text-brand-terracotta">
             Home
           </a>
           <p className="pt-2 text-xs font-semibold uppercase tracking-[0.18em] text-teal">Safaris</p>
@@ -126,7 +126,7 @@ export default function Navbar() {
               key={item.label}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-2.5 text-sm text-ink hover:text-teal transition-colors"
+              className="flex min-h-11 items-center text-sm text-ink hover:text-teal transition-colors"
             >
               {item.label}
             </a>
@@ -136,7 +136,7 @@ export default function Navbar() {
               key={item.label}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-2.5 text-ink font-medium hover:text-brand-terracotta transition-colors"
+              className="flex min-h-11 items-center text-ink font-medium hover:text-brand-terracotta transition-colors"
             >
               {item.label}
             </a>
@@ -144,7 +144,7 @@ export default function Navbar() {
           <a
             href="#inquiry"
             onClick={() => setMenuOpen(false)}
-            className="mt-2 block text-center bg-brand-terracotta hover:bg-brand-terracotta-dark text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all"
+            className="mt-2 flex min-h-11 items-center justify-center rounded-full bg-brand-terracotta px-6 text-center text-sm font-semibold text-white transition-all hover:bg-brand-terracotta-dark"
           >
             Find Your Adventure
           </a>

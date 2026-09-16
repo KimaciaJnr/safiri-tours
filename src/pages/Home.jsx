@@ -86,7 +86,7 @@ export default function Home() {
 
       <section id="destinations" className="px-6 py-16 md:py-20">
         <div className="w-full">
-          <div className="mx-auto mb-16 max-w-3xl text-center">
+          <div className="mx-auto mb-10 max-w-3xl text-center md:mb-16">
             <p className="text-xs font-semibold tracking-[0.2em] text-brand-terracotta uppercase">Our Safaris</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold text-ink">Curated safari experiences</h2>
           </div>
@@ -95,11 +95,11 @@ export default function Home() {
             {safariCategories.map((category, index) => (
               <article
                 key={category.title}
-                className={`flex min-h-screen flex-col rounded-[2rem] border border-line px-6 py-12 shadow-[0_18px_45px_rgba(17,24,39,0.04)] md:px-12 md:py-16 ${
+                className={`flex min-h-0 flex-col rounded-[1.5rem] border border-line px-4 py-8 shadow-[0_18px_45px_rgba(17,24,39,0.04)] md:min-h-screen md:rounded-[2rem] md:px-12 md:py-16 ${
                   index % 2 === 0 ? 'bg-white' : 'bg-cream-light'
                 }`}
               >
-                <div className="mb-12 max-w-2xl">
+                <div className="mb-8 max-w-2xl md:mb-12">
                   <span className="inline-flex rounded-full bg-brand-terracotta/10 px-3 py-1 text-xs font-semibold text-brand-terracotta">
                     Safari Category
                   </span>
@@ -112,7 +112,7 @@ export default function Home() {
                     <a
                       key={card.slug}
                       href={`${category.route}?destination=${encodeURIComponent(card.title)}`}
-                      className="group relative h-full min-h-[340px] overflow-hidden rounded-[1.75rem] border border-line bg-teal shadow-[0_18px_45px_rgba(17,24,39,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(17,24,39,0.12)]"
+                      className="group relative h-full min-h-[260px] overflow-hidden rounded-[1.5rem] border border-line bg-teal shadow-[0_18px_45px_rgba(17,24,39,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(17,24,39,0.12)] md:min-h-[340px] md:rounded-[1.75rem]"
                     >
                       <img
                         src={card.image}
@@ -120,7 +120,7 @@ export default function Home() {
                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent" />
-                      <div className="relative flex h-full flex-col justify-end p-6">
+                      <div className="relative flex h-full flex-col justify-end p-5 md:p-6">
                         <span className="inline-flex w-fit rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-teal">
                           Safari package
                         </span>
@@ -134,10 +134,10 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-12 flex justify-end">
+                <div className="mt-8 flex justify-stretch md:mt-12 md:justify-end">
                   <a
                     href={category.route}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-brand-terracotta-dark hover:shadow-lg"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-brand-terracotta-dark hover:shadow-lg md:w-auto"
                   >
                     See more safaris
                     <ArrowRight className="h-4 w-4" />

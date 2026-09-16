@@ -52,8 +52,8 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-5xl flex-col justify-end px-6 py-16 text-white md:py-20">
-        <div className="max-w-3xl space-y-6">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4rem)] max-w-5xl flex-col justify-end px-5 py-12 text-white sm:px-6 sm:py-16 md:min-h-[calc(100vh-80px)] md:py-20">
+        <div className="max-w-3xl space-y-5 md:space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs text-gray-200 backdrop-blur-md">
             <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
             <span>Group Tours · Road Trips · Adventures Across Africa</span>
@@ -67,10 +67,10 @@ export default function Hero() {
             Join affordable, social group tours and road trips across Africa. We handle the planning and logistics — you meet new people, relax, and make memories that last long after you're home.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2">
+          <div className="flex flex-col items-stretch gap-3 pt-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href="#inquiry"
-              className="flex items-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-brand-terracotta-dark"
+              className="flex items-center justify-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-brand-terracotta-dark"
             >
               Find Your Adventure
               <ArrowRight className="h-4 w-4" />
@@ -78,7 +78,7 @@ export default function Hero() {
 
             <a
               href="#safari-guide"
-              className="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/20"
+              className="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-center text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/20"
             >
               See How It Works
             </a>

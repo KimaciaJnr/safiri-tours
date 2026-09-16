@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SafariCard from '../components/SafariCard';
@@ -23,6 +23,15 @@ export default function SafariDetailPage({ slug }) {
       bookingRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+  useEffect(() => {
+    const query = window.location.hash.split('?')[1] || '';
+    const shouldOpenBooking = new URLSearchParams(query).get('booking') === '1';
+    if (!shouldOpenBooking || !pkg) return undefined;
+
+    const timeoutId = window.setTimeout(scrollToBooking, 60);
+    return () => window.clearTimeout(timeoutId);
+  }, [pkg]);
 
   if (!pkg) {
     return (

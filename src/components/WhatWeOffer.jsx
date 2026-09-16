@@ -65,6 +65,16 @@ export default function WhatWeOffer() {
               </div>
               <h3 className="font-bold text-lg text-gray-900 mb-2">{item.title}</h3>
               <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+              <div className="mt-6 border-t border-gray-100 pt-4">
+                <p className="text-sm font-medium text-ink">Does this look like fun? Book tickets today!</p>
+                <a
+                  href={`#inquiry?package=${encodeURIComponent(item.title)}`}
+                  className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-terracotta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-terracotta-dark"
+                >
+                  Book Tour
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>

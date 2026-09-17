@@ -1,10 +1,8 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowRight, ArrowUp } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import WhatWeOffer from '../components/WhatWeOffer';
-import Destinations from '../components/Destinations';
-import Philosophy from '../components/Philosophy';
 import InquiryForm from '../components/InquiryForm';
 import Footer from '../components/Footer';
 
@@ -62,15 +60,24 @@ const safariCategories = [
 ];
 
 export default function Home() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowBackToTop(window.scrollY > 600);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-cream text-ink font-sans selection:bg-brand-terracotta selection:text-white">
       <Navbar />
       <main id="main" tabIndex={-1}>
         <Hero />
 
-      <section className="bg-[linear-gradient(180deg,#F4F0EA_0%,#F8F6F2_100%)] px-6 py-16 md:py-20">
+      <section className="bg-[linear-gradient(180deg,#F4F0EA_0%,#F8F6F2_100%)] px-6 py-10 md:py-14">
         <div className="max-w-5xl mx-auto">
-          <div className="mx-auto max-w-4xl rounded-[2rem] border border-line-soft bg-white/80 p-8 shadow-[0_18px_50px_rgba(17,24,39,0.06)] backdrop-blur-sm md:p-12">
+          <div className="mx-auto max-w-4xl rounded-[2rem] border border-line-soft bg-white/80 p-6 shadow-[0_18px_50px_rgba(17,24,39,0.06)] backdrop-blur-sm md:p-8">
             <p className="text-xs font-semibold tracking-[0.22em] text-brand-terracotta uppercase">Traveler Review</p>
             <blockquote className="mt-5 text-2xl md:text-4xl font-medium leading-relaxed text-ink">
               “The planning was seamless, the wildlife was unforgettable, and the whole experience felt effortlessly premium from start to finish.”
@@ -84,22 +91,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="destinations" className="px-6 py-16 md:py-20">
+      <section id="destinations" className="px-6 py-10 md:py-14">
         <div className="w-full">
-          <div className="mx-auto mb-10 max-w-3xl text-center md:mb-16">
+          <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
             <p className="text-xs font-semibold tracking-[0.2em] text-brand-terracotta uppercase">Our Safaris</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold text-ink">Curated safari experiences</h2>
           </div>
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-8 md:space-y-12">
             {safariCategories.map((category, index) => (
               <article
                 key={category.title}
-                className={`flex min-h-0 flex-col rounded-[1.5rem] border border-line px-4 py-8 shadow-[0_18px_45px_rgba(17,24,39,0.04)] md:min-h-screen md:rounded-[2rem] md:px-12 md:py-16 ${
+                className={`flex min-h-0 flex-col rounded-[1.5rem] border border-line-soft px-4 py-6 shadow-[0_18px_45px_rgba(17,24,39,0.03)] md:rounded-[2rem] md:px-10 md:py-8 ${
                   index % 2 === 0 ? 'bg-white' : 'bg-cream-light'
                 }`}
               >
-                <div className="mb-8 max-w-2xl md:mb-12">
+                <div className="mb-6 max-w-2xl md:mb-8">
                   <span className="inline-flex rounded-full bg-brand-terracotta/10 px-3 py-1 text-xs font-semibold text-brand-terracotta">
                     Safari Category
                   </span>
@@ -107,12 +114,12 @@ export default function Home() {
                   <p className="mt-3 leading-relaxed text-gray-600">{category.description}</p>
                 </div>
 
-                <div className="grid flex-1 grid-cols-1 gap-6 md:grid-cols-3">
+                <div className="grid flex-1 grid-cols-1 gap-4 md:grid-cols-3">
                   {category.cards.map((card) => (
                     <a
                       key={card.slug}
                       href={`${category.route}?destination=${encodeURIComponent(card.title)}`}
-                      className="group relative h-full min-h-[260px] overflow-hidden rounded-[1.5rem] border border-line bg-teal shadow-[0_18px_45px_rgba(17,24,39,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(17,24,39,0.12)] md:min-h-[340px] md:rounded-[1.75rem]"
+                      className="group relative h-full min-h-[230px] overflow-hidden rounded-[1.5rem] border border-line bg-teal shadow-[0_18px_45px_rgba(17,24,39,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(17,24,39,0.12)] md:min-h-[290px] md:rounded-[1.75rem]"
                     >
                       <img
                         src={card.image}
@@ -126,7 +133,7 @@ export default function Home() {
                         </span>
                         <h4 className="mt-3 text-2xl font-bold leading-snug text-white">{card.title}</h4>
                         <span className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-white/90">
-                          View details
+                          View packages
                           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </span>
                       </div>
@@ -134,7 +141,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-8 flex justify-stretch md:mt-12 md:justify-end">
+                <div className="mt-6 flex justify-stretch md:mt-8 md:justify-end">
                   <a
                     href={category.route}
                     className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-terracotta px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-brand-terracotta-dark hover:shadow-lg md:w-auto"
@@ -150,11 +157,20 @@ export default function Home() {
       </section>
 
       <WhatWeOffer />
-        <Destinations />
-        <Philosophy />
         <InquiryForm />
       </main>
       <Footer />
+      {showBackToTop && (
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
+          className="fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-teal text-white shadow-lg transition-colors hover:bg-teal-dark focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2"
+          aria-label="Back to top"
+          title="Back to top"
+        >
+          <ArrowUp className="h-5 w-5" aria-hidden="true" />
+        </button>
+      )}
     </div>
   );
 }

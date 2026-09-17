@@ -42,39 +42,29 @@ export default function WhatWeOffer() {
   ];
 
   return (
-    <section id="safari-guide" className="bg-cream py-20 px-6">
-      <div className="w-full text-center space-y-4">
-        <span className="text-xs font-semibold tracking-wider text-teal uppercase">
+    <section id="safari-guide" className="bg-cream px-6 py-12 md:py-14">
+      <div className="mx-auto w-full max-w-6xl space-y-3 text-center">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-teal">
           SAFARI GUIDE
         </span>
 
-        <h2 className="text-3xl md:text-5xl font-bold text-ink leading-tight">
+        <h2 className="text-3xl font-bold leading-tight text-ink md:text-4xl">
           Adventures built around <span className="text-brand-terracotta italic font-serif">the people</span>
         </h2>
 
-        <p className="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
+        <p className="mx-auto max-w-2xl text-sm leading-relaxed text-gray-600 md:text-base">
           From weekend getaways to full expeditions, every Safiri trip blends discovery, culture, nature and community.
         </p>
 
         {/* 6 Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 text-left">
+        <div className="grid grid-cols-1 gap-4 pt-6 text-left sm:grid-cols-2 lg:grid-cols-3">
           {offers.map((item, idx) => (
-            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className={`w-10 h-10 rounded-2xl ${item.bg} flex items-center justify-center mb-5`}>
+            <div key={idx} className="rounded-2xl border border-line-soft bg-white p-5 shadow-sm transition-shadow hover:shadow-md md:p-6">
+              <div className={`mb-4 flex h-10 w-10 items-center justify-center rounded-xl ${item.bg}`}>
                 {item.icon}
               </div>
-              <h3 className="font-bold text-lg text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
-              <div className="mt-6 border-t border-gray-100 pt-4">
-                <p className="text-sm font-medium text-ink">Does this look like fun? Book tickets today!</p>
-                <a
-                  href={`#inquiry?package=${encodeURIComponent(item.title)}`}
-                  className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-terracotta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-terracotta-dark"
-                >
-                  Book Tour
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
+              <h3 className="mb-2 text-base font-bold text-gray-900">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-gray-500">{item.desc}</p>
             </div>
           ))}
         </div>

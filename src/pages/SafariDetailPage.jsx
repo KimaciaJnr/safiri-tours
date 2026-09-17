@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SafariCard from '../components/SafariCard';
-import BookingCard from '../components/BookingCard';
 import { getPackageBySlug, getRelatedPackages } from '../data/safaris';
-import { MapPin, Clock, Users, Home, Calendar, CheckCircle2, XCircle, ChevronRight, Compass } from 'lucide-react';
+import { MapPin, Clock, Users, Home, Calendar, CheckCircle2, XCircle, ChevronRight, Compass, ArrowRight } from 'lucide-react';
 
 const categoryLabels = {
   nairobi: 'Kenya Safaris from Nairobi',
@@ -16,22 +15,6 @@ const categoryLabels = {
 
 export default function SafariDetailPage({ slug }) {
   const pkg = getPackageBySlug(slug);
-  const bookingRef = useRef(null);
-
-  const scrollToBooking = () => {
-    if (bookingRef.current) {
-      bookingRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  useEffect(() => {
-    const query = window.location.hash.split('?')[1] || '';
-    const shouldOpenBooking = new URLSearchParams(query).get('booking') === '1';
-    if (!shouldOpenBooking || !pkg) return undefined;
-
-    const timeoutId = window.setTimeout(scrollToBooking, 60);
-    return () => window.clearTimeout(timeoutId);
-  }, [pkg]);
 
   if (!pkg) {
     return (
@@ -126,7 +109,9 @@ export default function SafariDetailPage({ slug }) {
               <span className="text-xl font-bold text-teal">{pkg.price}</span>
               <button
                 type="button"
-                onClick={scrollToBooking}
+                onClick={() => {
+                  window.location.hash = `booking?package=${encodeURIComponent(pkg.title)}`;
+                }}
                 className="rounded-2xl bg-brand-terracotta px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-terracotta-dark shadow-md"
               >
                 Book This Safari
@@ -135,8 +120,8 @@ export default function SafariDetailPage({ slug }) {
           </div>
         </header>
 
-        {/* Two-Column Layout: Main + Booking Sidebar */}
-        <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
+        {/* Safari Content */}
+        <div className="mt-10">
 
           {/* Left Column — Safari Content */}
           <div className="min-w-0 space-y-12">
@@ -189,6 +174,19 @@ export default function SafariDetailPage({ slug }) {
                     </li>
                   ))}
                 </ol>
+                <div className="mt-8 flex flex-col gap-4 rounded-[1.5rem] border border-brand-terracotta/20 bg-cream-soft p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:p-6">
+                  <div>
+                    <p className="text-lg font-bold text-ink">Does this look like fun? Book tickets today!</p>
+                    <p className="mt-1 text-sm text-gray-600">Start planning your adventure with our team.</p>
+                  </div>
+                  <a
+                    href={`#booking?package=${encodeURIComponent(pkg.title)}`}
+                    className="inline-flex min-h-12 w-full shrink-0 items-center justify-center gap-2 rounded-2xl bg-brand-terracotta px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-brand-terracotta-dark focus:outline-none focus:ring-2 focus:ring-brand-terracotta focus:ring-offset-2 sm:w-auto"
+                  >
+                    Book Tour
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </a>
+                </div>
               </section>
             )}
 
@@ -240,11 +238,6 @@ export default function SafariDetailPage({ slug }) {
 
           </div>
 
-          {/* Right Column — Sticky Booking Card */}
-          <div ref={bookingRef} className="lg:sticky lg:top-24">
-            <BookingCard packageTitle={pkg.title} />
-          </div>
-
         </div>
 
         {/* CTA Section */}
@@ -256,7 +249,9 @@ export default function SafariDetailPage({ slug }) {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
               type="button"
-              onClick={scrollToBooking}
+              onClick={() => {
+                window.location.hash = `booking?package=${encodeURIComponent(pkg.title)}`;
+              }}
               className="rounded-2xl bg-brand-terracotta px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-terracotta-dark shadow-md"
             >
               Inquire About This Safari

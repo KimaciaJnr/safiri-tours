@@ -72,27 +72,26 @@ export default function InquiryForm() {
     'w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-orange';
 
   return (
-    <section id="inquiry" className="bg-cream-light py-20 px-6">
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="inquiry" className="bg-cream-light px-6 py-12 md:py-14">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-10">
         
         {/* Left Content */}
-        <div className="space-y-6">
+        <div className="space-y-5 lg:pt-4">
           <span className="text-xs font-semibold tracking-wider text-brand-terracotta uppercase">
             YOUR ADVENTURE STARTS HERE
           </span>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Ready to explore <br />
-            <span className="text-teal italic font-serif">Africa?</span>
+          <h2 className="max-w-lg text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+            Ready to explore <span className="font-serif italic text-teal">Africa?</span>
           </h2>
 
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="max-w-xl text-sm leading-relaxed text-gray-600 md:text-base">
             Whether you're dreaming of a weekend getaway, a scenic road trip, or help planning something unique, our team is here to make it happen. Send an inquiry and we'll take care of the rest.
           </p>
 
-          <div className="space-y-5 pt-2">
+          <div className="grid gap-4 pt-1 sm:grid-cols-2 lg:grid-cols-1">
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-brand-orange/10 text-brand-orange">
+              <div className="rounded-2xl bg-brand-orange/10 p-3 text-brand-orange">
                 <Calendar className="w-5 h-5" />
               </div>
               <div>
@@ -134,7 +133,7 @@ export default function InquiryForm() {
         </div>
 
         {/* Right Form Card */}
-        <div className="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100 space-y-6">
+        <div className="rounded-3xl border border-gray-100 bg-white p-5 shadow-lg sm:p-6 md:p-8">
           <div>
             <span className="text-[10px] font-bold tracking-widest text-teal uppercase">BEGIN THE JOURNEY</span>
             <h3 className="text-2xl font-bold text-gray-900 mt-1">Plan your next adventure</h3>
@@ -143,8 +142,8 @@ export default function InquiryForm() {
             </p>
           </div>
 
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form className="mt-5 space-y-3" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               <input
                 type="text"
                 name="name"
@@ -203,7 +202,7 @@ export default function InquiryForm() {
 
             <textarea
               name="message"
-              rows={3}
+              rows={2}
               value={form.message}
               onChange={handleChange}
               placeholder="Any questions or trip ideas..."

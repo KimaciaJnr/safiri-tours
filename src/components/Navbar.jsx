@@ -10,7 +10,6 @@ const safariLinks = [
 ];
 
 const navLinks = [
-  { label: 'Mountain Climbing', href: '#mountain-climbing' },
   { label: 'Safari Guide', href: '#safari-guide' },
   { label: 'About Us', href: '#about' },
 ];
@@ -43,11 +42,14 @@ export default function Navbar() {
       </a>
 
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
-        <a href="#home" className="flex items-center gap-3">
+        <a
+          href="#home"
+          className="inline-flex items-center rounded-2xl bg-white p-1.5 shadow-sm transition-shadow hover:shadow-md"
+        >
           <img
             src="/Photos/Logo_page-0001.jpg"
             alt="Safiri Expedition Tours"
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-9 w-auto object-contain sm:h-10"
           />
         </a>
 

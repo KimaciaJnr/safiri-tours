@@ -73,7 +73,7 @@ export default function CoastalSafariPage() {
     window.history.pushState(null, '', '#coastal-safari');
 
     setTimeout(() => {
-      packagesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      packagesRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
     }, 60);
   };
 
@@ -183,7 +183,7 @@ export default function CoastalSafariPage() {
                 onClick={() => {
                   setActiveStyle(null);
                   setTimeout(() => {
-                    packagesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    packagesRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
                   }, 60);
                 }}
                 className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-teal hover:border-teal/40 transition-colors"

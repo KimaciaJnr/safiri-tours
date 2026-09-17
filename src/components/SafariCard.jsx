@@ -32,16 +32,6 @@ export default function SafariCard({ pkg }) {
             <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-
-        <div className="border-t border-cream-sand pt-3">
-          <p className="text-sm font-medium text-ink">Does this look like fun? Book tickets today!</p>
-          <a
-            href={`#safari/${pkg.slug}?booking=1`}
-            className="mt-3 inline-flex w-full items-center justify-center rounded-2xl bg-brand-terracotta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-terracotta-dark"
-          >
-            Book Tour
-          </a>
-        </div>
       </div>
     </article>
   );

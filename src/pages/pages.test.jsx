@@ -32,6 +32,7 @@ describe('page smoke tests', () => {
   it('Nairobi page renders all 13 safari packages', () => {
     render(<NairobiSafariPage />);
     expect(screen.getAllByRole('link', { name: /View details/i })).toHaveLength(13);
+    expect(screen.queryByText(/Does this look like fun\?/i)).not.toBeInTheDocument();
   });
 
   it('coastal safari filters group packages by trip length', () => {
@@ -53,6 +54,11 @@ describe('page smoke tests', () => {
       screen.getByRole('heading', { name: /3 Days 2 Nights Amboseli Safari/i })
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Safari Itinerary/i })).toBeInTheDocument();
+    expect(screen.getByText(/Does this look like fun\? Book tickets today!/i)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Book Tour' })).toHaveAttribute(
+      'href',
+      '#booking?package=3%20Days%202%20Nights%20Amboseli%20Safari'
+    );
     expect(screen.getByRole('heading', { name: /Trip Highlights/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Package Includes/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Package Excludes/i })).toBeInTheDocument();

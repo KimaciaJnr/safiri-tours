@@ -8,6 +8,7 @@ import FlyInSafariPage from './pages/FlyInSafariPage';
 import BeachSafariPage from './pages/BeachSafariPage';
 import BudgetMaraPage from './pages/BudgetMaraPage';
 import SafariDetailPage from './pages/SafariDetailPage';
+import BookingPage from './pages/BookingPage';
 import { getPackageBySlug } from './data/safaris';
 
 const pageMap = {
@@ -20,7 +21,7 @@ const pageMap = {
   'budget-mara': <BudgetMaraPage />,
 };
 
-const homeSections = ['mountain-climbing', 'safari-guide', 'destinations', 'inquiry'];
+const homeSections = ['safari-guide', 'inquiry'];
 
 const pageTitles = {
   home: 'Safiri Expedition Tours | Kenya Safaris, Group Tours & Road Trips',
@@ -36,6 +37,23 @@ function App() {
   const [hash, setHash] = useState(() => window.location.hash);
 
   useEffect(() => {
+    const handleSamePageNavigation = (event) => {
+      const link = event.target.closest?.('a[href^="#"]');
+      if (!link) return;
+
+      const hrefHash = link.getAttribute('href');
+      if (!hrefHash || hrefHash !== window.location.hash) return;
+
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'auto' });
+      document.getElementById('main')?.focus({ preventScroll: true });
+    };
+
+    document.addEventListener('click', handleSamePageNavigation);
+    return () => document.removeEventListener('click', handleSamePageNavigation);
+  }, []);
+
+  useEffect(() => {
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
@@ -49,24 +67,28 @@ function App() {
   const [key, query] = rawKey.split('?');
   const isSection = homeSections.includes(key);
   const isSafariDetail = key.startsWith('safari/');
+  const isBooking = key === 'booking';
   const pageKey = pageMap[key] && !isSection && !isSafariDetail ? key : 'home';
 
   const safariSlug = isSafariDetail ? key.replace('safari/', '') : null;
   const safariPkg = safariSlug ? getPackageBySlug(safariSlug) : null;
+  const bookingPackage = isBooking ? new URLSearchParams(query).get('package') || '' : '';
 
   useEffect(() => {
     if (isSafariDetail && safariPkg) {
       document.title = `${safariPkg.title} | Safiri Expedition Tours`;
+    } else if (isBooking) {
+      document.title = 'Book Your Safari | Safiri Expedition Tours';
     } else {
       document.title = pageTitles[pageKey] || pageTitles.home;
     }
-  }, [pageKey, isSafariDetail, safariPkg]);
+  }, [pageKey, isSafariDetail, safariPkg, isBooking]);
 
   useEffect(() => {
     if (isSection) {
       const el = document.getElementById(key);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.scrollIntoView({ behavior: 'auto', block: 'start' });
       }
       return;
     }
@@ -80,6 +102,7 @@ function App() {
 
   if (isSection) return <Home key={query || key} />;
   if (isSafariDetail) return <SafariDetailPage slug={key.replace('safari/', '')} />;
+  if (isBooking) return <BookingPage packageTitle={bookingPackage} />;
   return pageMap[key] || <Home />;
 }
 

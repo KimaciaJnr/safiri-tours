@@ -63,6 +63,19 @@ describe('App routing', () => {
     expect(screen.getByRole('heading', { name: /Nairobi safari packages/i })).toBeInTheDocument();
   });
 
+  it('does not reroute when the current page link is clicked', () => {
+    const scrollToSpy = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+    window.history.replaceState(null, '', '#nairobi-safari');
+    render(<App />);
+
+    act(() => {
+      screen.getAllByRole('link', { name: 'Kenya Safaris from Nairobi' })[0].click();
+    });
+
+    expect(scrollToSpy).toHaveBeenCalledWith({ top: 0, behavior: 'auto' });
+    expect(screen.getByRole('heading', { name: /Nairobi safari packages/i })).toBeInTheDocument();
+  });
+
   it('renders each safari page for its route hash', () => {
     const cases = [
       { hash: '#coastal-safari', heading: 'Safaris from the Coast' },
@@ -115,7 +128,7 @@ describe('App routing', () => {
     render(<App />);
 
     expect(screen.getByRole('heading', { name: /The journey is/i })).toBeInTheDocument();
-    expect(scrollSpy).toHaveBeenCalled();
+    expect(scrollSpy).toHaveBeenCalledWith({ behavior: 'auto', block: 'start' });
   });
 
   it('falls back to Home for unknown hashes', () => {
@@ -130,6 +143,16 @@ describe('App routing', () => {
     expect(screen.getByRole('heading', { name: /3 Days 2 Nights Amboseli Safari/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Safari Itinerary/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Trip Highlights/i })).toBeInTheDocument();
+  });
+
+  it('renders the dedicated booking page with the selected package', () => {
+    window.history.replaceState(null, '', '#booking?package=3%20Days%202%20Nights%20Amboseli%20Safari');
+    render(<App />);
+
+    expect(screen.getByRole('heading', { name: 'Reserve your safari', level: 1 })).toBeInTheDocument();
+    expect(screen.getByText('3 Days 2 Nights Amboseli Safari')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Send Booking Request/i })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: /Safari Itinerary/i })).not.toBeInTheDocument();
   });
 
   it('renders a not-found message for an unknown safari slug', () => {
